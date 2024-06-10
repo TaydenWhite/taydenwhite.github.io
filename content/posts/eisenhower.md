@@ -1,6 +1,6 @@
 +++
-title = 'Eisenhower Matrix'
-date = 2024-10-10T19:48:13-04:00
+title = 'Eisenhower'
+date = 2024-06-10T11:34:08-04:00
 draft = false
 +++
 
