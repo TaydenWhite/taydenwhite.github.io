@@ -6,7 +6,14 @@
     <description>Recent content in Posts on Tayden Whites Website</description>
     <generator>Hugo -- 0.126.1</generator>
     <language>en-us</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Thu, 06 Jun 2024 19:48:13 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World!</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Thu, 06 Jun 2024 19:48:13 -0400</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>This is the first of a collection of posts I will make on this website. For this summer, they will mostly consist of personal takeaways from my time as an intern at Johnson &amp;amp; Johnson. I expect to learn a host of strategies and methods which I could not find in the classroom.</description>
+    </item>
   </channel>
 </rss>
