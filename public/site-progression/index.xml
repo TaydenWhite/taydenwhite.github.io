@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Site-Progressions on Tayden Whites Website</title>
+    <link>http://localhost:1313/site-progression/</link>
+    <description>Recent content in Site-Progressions on Tayden Whites Website</description>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Jun 2024 20:37:10 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/site-progression/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Menu</title>
+      <link>http://localhost:1313/site-progression/menu/</link>
+      <pubDate>Mon, 10 Jun 2024 20:37:10 -0400</pubDate>
+      <guid>http://localhost:1313/site-progression/menu/</guid>
+      <description>Working towards making a menu in order to access different pages</description>
+    </item>
+    <item>
+      <title>Launch</title>
+      <link>http://localhost:1313/site-progression/launch/</link>
+      <pubDate>Mon, 10 Jun 2024 20:33:16 -0400</pubDate>
+      <guid>http://localhost:1313/site-progression/launch/</guid>
+      <description>On this page I will give updates on my personal progression in building this website. I will be detailing what I learn along the way.</description>
+    </item>
+  </channel>
+</rss>

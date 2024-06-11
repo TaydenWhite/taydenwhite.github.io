@@ -2,8 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/aboutme/</loc>
+    <lastmod>2024-06-10T20:58:33-04:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-10T19:48:13-04:00</lastmod>
+    <lastmod>2024-06-10T20:58:33-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site-progression/menu/</loc>
+    <lastmod>2024-06-10T20:37:10-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site-progression/</loc>
+    <lastmod>2024-06-10T20:37:10-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/site-progression/launch/</loc>
+    <lastmod>2024-06-10T20:33:16-04:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/contact-me/</loc>
+    <lastmod>2024-06-10T20:19:51-04:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2024-06-10T20:05:14-04:00</lastmod>

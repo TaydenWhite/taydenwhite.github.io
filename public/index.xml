@@ -6,14 +6,35 @@
     <description>Recent content on Tayden Whites Website</description>
     <generator>Hugo -- 0.126.1</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Jun 2024 20:19:51 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2024 20:58:33 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Aboutme</title>
+      <link>http://localhost:1313/aboutme/</link>
+      <pubDate>Mon, 10 Jun 2024 20:58:33 -0400</pubDate>
+      <guid>http://localhost:1313/aboutme/</guid>
+      <description>Hi! My name is Tayden White. I am a sophomore year student at Purdue University, seeking degrees in both Computer Science and Economics. This summer (2024) I am taking an internship at Johnson &amp;amp; Johnson with the hope of gaining insight into</description>
+    </item>
+    <item>
+      <title>Menu</title>
+      <link>http://localhost:1313/site-progression/menu/</link>
+      <pubDate>Mon, 10 Jun 2024 20:37:10 -0400</pubDate>
+      <guid>http://localhost:1313/site-progression/menu/</guid>
+      <description>Working towards making a menu in order to access different pages</description>
+    </item>
+    <item>
+      <title>Launch</title>
+      <link>http://localhost:1313/site-progression/launch/</link>
+      <pubDate>Mon, 10 Jun 2024 20:33:16 -0400</pubDate>
+      <guid>http://localhost:1313/site-progression/launch/</guid>
+      <description>On this page I will give updates on my personal progression in building this website. I will be detailing what I learn along the way.</description>
+    </item>
+    <item>
       <title>Contact Me</title>
-      <link>http://localhost:1313/contactme/</link>
+      <link>http://localhost:1313/contact-me/</link>
       <pubDate>Mon, 10 Jun 2024 20:19:51 -0400</pubDate>
-      <guid>http://localhost:1313/contactme/</guid>
-      <description>My email address is tayden.white@gmail.com</description>
+      <guid>http://localhost:1313/contact-me/</guid>
+      <description>My email address is NOT tayden.white@gmail.com</description>
     </item>
     <item>
       <title>Static Sites</title>
@@ -27,7 +48,8 @@
       <link>http://localhost:1313/posts/eisenhower/</link>
       <pubDate>Mon, 10 Jun 2024 11:34:08 -0400</pubDate>
       <guid>http://localhost:1313/posts/eisenhower/</guid>
-      <description>One tool I recently learned about is the Eisenhower Matrix. The Eisenhower Matrix is a method of applying weights to tasks based on two metrics, their urgency and their importance.</description>
+      <description>One tool I recently learned about is the Eisenhower Matrix. The Eisenhower Matrix is a method of applying weights to tasks based on two metrics, their urgency and their importance.
+Each of the four quadrants indicates how one should approach a problem based on its varying urgence and importance. It is a very simple process, but one that can greatly simplify a prioritization process.</description>
     </item>
     <item>
       <title>Hello World!</title>
