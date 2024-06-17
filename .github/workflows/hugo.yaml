@@ -54,6 +54,8 @@ jobs:
           node-version: '18'
       - name: Install Node.js dependencies
         run: |
+          - name: Install dependencies
+        run: npm install
           npm install -g postcss-cli
           npm ci || true
       - name: Build with Hugo
