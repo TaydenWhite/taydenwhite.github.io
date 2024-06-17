@@ -57,8 +57,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Install Node.js dependencies
-        run: npm install
-
+        run: npm install postcss-cli
 
       - name: Build with Hugo
         env:
