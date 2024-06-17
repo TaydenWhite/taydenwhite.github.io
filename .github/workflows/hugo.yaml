@@ -24,37 +24,23 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.127.0
-
     steps:
-      - name: Install Hugo
-        run: |
-          wget -O hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz
-          tar -xf hugo.tar.gz hugo
-          sudo mv hugo /usr/local/bin/hugo
-          rm hugo.tar.gz
-        env:
-          HUGO_VERSION: ${{ env.HUGO_VERSION }}
-
-      - name: Install Node.js and npm
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install PostCSS CLI
-        run: npm install -g postcss-cli
-
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
-
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+          cache: 'npm'
+
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${{ env.HUGO_VERSION }}/hugo_extended_${{ env.HUGO_VERSION }}_Linux-64bit.deb
+          sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
       - name: Install Node.js dependencies
         run: npm install postcss-cli
@@ -65,7 +51,7 @@ jobs:
           HUGO_ENV: production
           TZ: America/Los_Angeles
         run: |
-          hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --gc --minify --baseURL "https://aaryadani.github.io/new-site/"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
@@ -74,16 +60,12 @@ jobs:
           path: ./public
 
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
-
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/github-pages-deploy@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main  # Replace with your deployment branch
-          folder: public
+          branch: main
+          folder: ./public
