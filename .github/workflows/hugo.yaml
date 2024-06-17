@@ -56,8 +56,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
 
-      - name: Install Node.js dependencies
-        run: npm ci
+      - - name: Install Node.js dependencies
+          run: npm install
+
 
       - name: Build with Hugo
         env:
