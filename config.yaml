@@ -13,3 +13,10 @@ module:
   hugoVersion:
     extended: true
     min: 0.110.0
+
+
+[module]
+  [[module.mounts]]
+    source = "assets/css"
+    target = "assets_gen/css"
+

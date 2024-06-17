@@ -1,0 +1,31 @@
+name: Hugo Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # change this to your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'  # or specify a specific version like '0.84.2'
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          user_name: GitHub Actions
+          user_email: actions@users.noreply.github.com
+          custom_domain: yourdomain.com  # replace with your custom domain
