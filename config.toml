@@ -1,0 +1,29 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Your Website Title"
+
+[build]
+  # Configuration for SCSS processing
+  [build]
+    ignoreCache = false
+    publishDir = "public"
+    [buildOptions]
+      disableFastRender = false
+      ignoreCache = false
+      minifyOutput = true
+    [languageServer]
+      disable = false
+      
+[build]
+  ignoreCache = false
+  publishDir = "public"
+  [buildOptions]
+    disableFastRender = false
+    ignoreCache = false
+    minifyOutput = true
+  [languageServer]
+    disable = false
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
