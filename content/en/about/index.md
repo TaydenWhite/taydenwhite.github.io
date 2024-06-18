@@ -86,6 +86,9 @@ Here is a YouTube video from my Dad in 2014:
 <iframe width="700" height="900" frameborder="0" scrolling="no" src="https://jnj-my.sharepoint.com/personal/mr18_its_jnj_com/_layouts/15/Doc.aspx?sourcedoc={b143db88-8d16-4174-a56f-2ee36dffee44}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 
 
+# CSV Table 
+{.text-center}
+
 |First Name|Last Name|Email          |Number      |Social Meida  |Year     |Major|
 |----------|---------|---------------|------------|--------------|---------|-----|
 |Aangad    |Minhas   |Apm164@pitt.edu|571-420-1230|Aa_minhas68   |Junior   |     |
