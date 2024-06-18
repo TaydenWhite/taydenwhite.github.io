@@ -28,6 +28,7 @@
     "precheck:links": "npm run build",
     "postbuild:preview": "npm run _check:links",
     "postbuild:production": "npm run _check:links",
+    "postcss": "\"C:\\Program Files\\nodejs\\npx\" postcss",
     "serve": "npm run _serve",
     "test": "npm run check:links",
     "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
