@@ -13,17 +13,3 @@ title = "Your Website Title"
       minifyOutput = true
     [languageServer]
       disable = false
-      
-[build]
-  ignoreCache = false
-  publishDir = "public"
-  [buildOptions]
-    disableFastRender = false
-    ignoreCache = false
-    minifyOutput = true
-  [languageServer]
-    disable = false
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = false
