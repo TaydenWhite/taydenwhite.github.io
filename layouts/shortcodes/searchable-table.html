@@ -1,39 +1,62 @@
+{{ if not (.Page.Scratch.Get "Papa.parse") }}
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    {{ .Page.Scratch.Set "Papa.parse" true }}
+{{ end }}
+
+{{ if not (.Page.Scratch.Get "tabulator") }}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Commissioner">
+    <link href="https://unpkg.com/tabulator-tables@5.5.3/dist/css/tabulator_semanticui.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@5.5.3/dist/js/tabulator.min.js"></script>
+    {{ .Page.Scratch.Set "tabulator" true }}
+{{ end }}
+
 <div>
-  <input type="text" id="searchInput" placeholder="Search for names..">
-  <table id="dataTable">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Age</th>
-        <th>City</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{ .Inner }}
-    </tbody>
-  </table>
+    <button id="{{ .Get "id" }}-download">Download</button>
 </div>
+<div id="{{ .Get "id" }}" style="height: {{ .Get "height" }}px; width: {{ .Get "width" }}px;"></div>
 
-<script>
-document.getElementById('searchInput').addEventListener('keyup', function() {
-  var input, filter, table, tr, td, i, j, txtValue;
-  input = document.getElementById('searchInput');
-  filter = input.value.toUpperCase();
-  table = document.getElementById('dataTable');
-  tr = table.getElementsByTagName('tr');
-
-  for (i = 1; i < tr.length; i++) {
-    tr[i].style.display = 'none';
-    td = tr[i].getElementsByTagName('td');
-    for (j = 0; j < td.length; j++) {
-      if (td[j]) {
-        txtValue = td[j].textContent || td[j].innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-          tr[i].style.display = '';
-          break;
+<link rel="stylesheet" href="{{ "css/tabulator-custom-style.css" | relURL }}">
+<script type="text/javascript">
+var tableId = '{{ .Get "id" }}';
+if ('{{ .Get "layout" }}' == "fill") {
+    document.getElementsByClassName("flex-block-wrapper")[0].style['margin-left'] = '0px';
+    var table_div = document.getElementById(tableId);
+    table_div.style['position'] = 'absolute';
+    table_div.style['height'] = '90%';
+    table_div.style['width'] = '90%';
+};
+var download_link = '{{ .Get "downloadLink" }}';
+if (download_link == '' || download_link == null) {
+    download_link = '{{ .Get "csvFile" }}'
+};
+var xhr = new XMLHttpRequest();
+xhr.open('GET', '{{ .Get "csvFile" }}', true);
+xhr.onload = function () {
+    if (this.status === 200) {
+        var csvData = this.responseText;
+        // use Papa.parse to parse the data
+        var parsedData = Papa.parse(csvData, { delimiter: ',', dynamicTyping: true, skipEmptyLines: true, header: true  });
+        if (parsedData.errors.length > 0) {
+          console.error('Error parsing CSV file:', parsedData.errors);
+          return;
         }
-      }
+        var table = new Tabulator('#' + tableId, {
+            data:parsedData.data, 
+            autoColumns:true,
+            pagination:true,
+            paginationSize:10,
+            paginationCounter:"rows",
+            columnDefaults:{
+                headerFilter: "input",
+                hozAlign: "center",
+                headerHozAlign: "center",
+                formatter: "textarea"
+            }
+        });
+        document.getElementById(tableId + "-download").addEventListener("click", function(){
+            location.href = download_link;
+        });
     }
-  }
-});
+}
+xhr.send();
 </script>
