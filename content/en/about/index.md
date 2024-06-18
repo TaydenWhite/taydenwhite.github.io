@@ -129,4 +129,3 @@ date = 2023-06-18
 | Sam Brown  | 20  | Chicago    |
 {{< /searchable-table >}}
 
-{{% /blocks/section %}}
