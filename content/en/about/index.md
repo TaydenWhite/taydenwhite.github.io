@@ -85,6 +85,9 @@ Here is a YouTube video from my Dad in 2014:
 
 <iframe width="700" height="900" frameborder="0" scrolling="no" src="https://jnj-my.sharepoint.com/personal/mr18_its_jnj_com/_layouts/15/Doc.aspx?sourcedoc={b143db88-8d16-4174-a56f-2ee36dffee44}&action=embedview&wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
 
+{{% /blocks/section %}}
+
+{{% blocks/section %}}
 
 # CSV Table 
 {.text-center}
