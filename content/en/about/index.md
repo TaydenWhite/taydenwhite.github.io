@@ -21,5 +21,5 @@ Here is a YouTube video from my Dad in 2014:
 ## Here is a searchable table from a CSV file
 {.text-center}
 
-{{< searchable-table id="Year" csvFile="https://www.stats.govt.nz/assets/Uploads/Annual-enterprise-survey/Annual-enterprise-survey-2021-financial-year-provisional/Download-data/annual-enterprise-survey-2021-financial-year-provisional-csv.csv" downloadLink="https://www.stats.govt.nz/assets/Uploads/Annual-enterprise-survey/Annual-enterprise-survey-2021-financial-year-provisional/Download-data/annual-enterprise-survey-2021-financial-year-provisional-csv.csv">}} 
+{{< searchable-table id="Year" csvFile="https://docs.google.com/spreadsheets/d/e/2PACX-1vRps3APzgmwwc2DIkKENuy4VZxGP3__2DN2AoiUOKsBZCq7ViPLKUJi68yG-Lk-tfNoA6jzVyYKEaQj/pub?output=csv" downloadLink="https://docs.google.com/spreadsheets/d/e/2PACX-1vRps3APzgmwwc2DIkKENuy4VZxGP3__2DN2AoiUOKsBZCq7ViPLKUJi68yG-Lk-tfNoA6jzVyYKEaQj/pub?output=csv">}} 
 

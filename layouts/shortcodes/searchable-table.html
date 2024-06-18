@@ -11,20 +11,20 @@
 {{ end }}
 
 <div>
-    <button id="{{ .Get "id" }}-download">Download</button>
+    <button id='{{ .Get "id" }}-download'>Download</button>
 </div>
-<div id="{{ .Get "id" }}" style="height: {{ .Get "height" }}px; width: {{ .Get "width" }}px;"></div>
+<div id='{{ .Get "id" }}' style="height: 600; width: 900;"></div>
 
-<link rel="stylesheet" href="{{ "css/tabulator-custom-style.css" | relURL }}">
+<link rel="stylesheet" href='{{ "css/tabulator-custom-style.css" | relURL }}'>
 <script type="text/javascript">
 var tableId = '{{ .Get "id" }}';
-if ('{{ .Get "layout" }}' == "fill") {
-    document.getElementsByClassName("flex-block-wrapper")[0].style['margin-left'] = '0px';
-    var table_div = document.getElementById(tableId);
+/*if ('{{ .Get "layout" }}' == "fill") {
+    //document.getElementsByClassName("flex-block-wrapper")[0].style['margin-left'] = '0px';
+    //var table_div = document.getElementById(tableId);
     table_div.style['position'] = 'absolute';
     table_div.style['height'] = '90%';
     table_div.style['width'] = '90%';
-};
+};*/
 var download_link = '{{ .Get "downloadLink" }}';
 if (download_link == '' || download_link == null) {
     download_link = '{{ .Get "csvFile" }}'
@@ -40,6 +40,7 @@ xhr.onload = function () {
           console.error('Error parsing CSV file:', parsedData.errors);
           return;
         }
+        console.log(parsedData);
         var table = new Tabulator('#' + tableId, {
             data:parsedData.data, 
             autoColumns:true,
