@@ -49,7 +49,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
-        run: if exist package-lock.json (npm ci) else (echo "No lock file found.")
+        run: if [ -f package-lock.json ] || [ -f npm-shrinkwrap.json ]; then npm ci; else echo "No lock file found."; fi
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
