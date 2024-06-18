@@ -27,16 +27,5 @@ Guide](https://docsy.dev/docs/). You can learn more about how to organize your
 documentation (and how we organized this site) in [Organizing Your
 Content](https://docsy.dev/docs/best-practices/organizing-content/).
 
-+++
-title = "Sample Page with Searchable Table"
-date = 2023-06-18
-+++
 
-## Here is a searchable table from a CSV file
-
-{{< searchable-table >}}
-| John Doe   | 30  | New York   |
-| Jane Smith | 25  | Los Angeles|
-| Sam Brown  | 20  | Chicago    |
-{{< /searchable-table >}}
 

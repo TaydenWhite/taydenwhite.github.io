@@ -113,5 +113,20 @@ Here is a YouTube video from my Dad in 2014:
 |Connor    |Rosenberg|CJR148@pitt.edu|            |c_rosenberg04 |Sophomore|     |
 
 
+{{% /blocks/section %}}
+
+
++++
+title = "Sample Page with Searchable Table"
+date = 2023-06-18
++++
+
+## Here is a searchable table from a CSV file
+
+{{< searchable-table >}}
+| John Doe   | 30  | New York   |
+| Jane Smith | 25  | Los Angeles|
+| Sam Brown  | 20  | Chicago    |
+{{< /searchable-table >}}
 
 {{% /blocks/section %}}
