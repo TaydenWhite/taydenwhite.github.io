@@ -1,4 +1,4 @@
 ---
-title: Releases
+title: Projects & Papers
 weight: 20
 ---

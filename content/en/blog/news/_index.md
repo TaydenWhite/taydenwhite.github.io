@@ -1,4 +1,4 @@
 ---
-title: Projects
+title: Lab Reports
 weight: 20
 ---
