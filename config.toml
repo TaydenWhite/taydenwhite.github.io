@@ -13,3 +13,8 @@ title = "Your Website Title"
       minifyOutput = true
     [languageServer]
       disable = false
+
+[module]
+  [module.hugoVersion]
+    min = "0.110.0"
+
