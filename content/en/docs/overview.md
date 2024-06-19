@@ -5,6 +5,12 @@ weight: 1
 ---
 In the spring semester of my freshman year, I collaborated with two of my peers on a paper regarding the usage of artificial intelligence in waste management. We presented this paper in a conference dedicated to first year engineering students. View the paper here: 
 
+---
+title: "Embedded Google Document"
+date: 2024-06-19T12:00:00
+draft: false
+---
+
 <style>
   .full-page-iframe {
     width: 100%;
