@@ -73,6 +73,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '20'
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.127.0'
+      - name: Build site
+        run: hugo
+
 
 
 
