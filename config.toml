@@ -1,20 +1,17 @@
-baseURL = "https://example.com/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Your Website Title"
-
-[build]
-  # Configuration for SCSS processing
-  [build]
-    ignoreCache = false
-    publishDir = "public"
-    [buildOptions]
-      disableFastRender = false
-      ignoreCache = false
-      minifyOutput = true
-    [languageServer]
-      disable = false
+title = "My New Hugo Site"
 
 [module]
   [module.hugoVersion]
     min = "0.110.0"
 
+[params]
+  # Add your theme-specific parameters here
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
