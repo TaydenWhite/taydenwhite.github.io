@@ -23,17 +23,15 @@ jobs:
         with:
           hugo-version: '0.127.0'
           
-      # Install Node.js and npm
+      # Install Dart Sass
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+
+      # Install Node.js and npm (optional if needed for other dependencies)
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Adjust node version as needed
-
-      # Install PostCSS CLI and other dependencies
-      - name: Install PostCSS CLI and dependencies
-        run: |
-          npm install -g postcss-cli
-          npm install  # Install project-specific npm packages if any
+          node-version: '18'
 
       # Build the Hugo site
       - name: Build site
@@ -45,5 +43,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public  # Path to Hugo's output directory
+          publish_dir: ./public
           cname: your-custom-domain.com  # Optional: Set a custom domain for GitHub Pages
