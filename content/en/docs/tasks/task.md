@@ -13,3 +13,6 @@ height="570"
 style="background: #FFFFFF; padding: 10px; border: none; border-radius: 5px; box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)"
 src="https://jika.io/embed/forecast-price-target?symbol=AAPL&boxShadow=true&graphColor=1652f0&textColor=161c2d&backgroundColor=FFFFFF&fontFamily=Nunito"
 ></iframe>
+
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-5ad46719-1e44-4480-be0d-831af7f91f58" data-elfsight-app-lazy></div>
