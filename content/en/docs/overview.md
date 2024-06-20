@@ -1,60 +1,16 @@
 ---
 title: Overview
-description: Here's where your user finds out if your project is for them.
+description: Here's where I tell my story about why I chose Pitt.
 weight: 1
 ---
-# New York Weather
+# Why Pitt?
 
-Stay updated with the current weather in New York City:
+Selecting a college was a significant and, at times, daunting decision for me. Amidst the array of choices, the University of Pittsburgh’s Swanson School of Engineering emerged as a well-rounded option that truly resonated with my aspirations. Multiple factors, including the environment, education, research, and advice from former alumni led me to choose the SSOE. 
 
-<a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+Cities have always held a special allure for me – the bustling energy, architectural splendor, and diverse tapestry of inhabitants. Simultaneously, I yearned for the quintessential college campus experience, where collaborative studying and shared activities thrive. Fortunately, Pitt offers the best of both worlds, nestled within an urban setting while boasting a welcoming campus.
+	
+Educational quality ranked highest among my considerations, particularly within my field of engineering. I found reassurance in the consistent recognition of the University of Pittsburgh by reputable sources such as U.S. News and Niche, consistently positioning it among the nation's top 50 engineering institutions. These accolades extended across various engineering disciplines, aligning with my interests. Nevertheless, my definitive choice of engineering branch remained uncertain. Pitt's freshman engineering program's flexibility to declare a specific major during the spring semester alleviated this concern, affording me the time and space to explore my passions and make a judicious choice for my academic journey.
 
----
+Furthermore, the university endows its students with a wealth of resources dedicated to the School of Engineering, with a strong emphasis on research – a domain close to my heart. Pitt's designation as an R1 research university further bolstered my confidence in its academic offerings. The presence of distinguished researchers and dedicated professors, some of whom I have the privilege of learning from now, stood as compelling reasons behind my choice. The availability of research opportunities for undergraduates, even incoming freshmen, far exceeded what I encountered at other institutions.
 
-# Nikunj Dani YouTube Video
-
-Explore this insightful video from my Dad filmed in 2014:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2gKGoYYufd0" frameborder="0" allowfullscreen></iframe>
-
----
-
-## Data Table
-
-Here is a searchable table displaying different speeds of cars:
-
-{{< searchable-table id="Speed" csvFile="https://docs.google.com/spreadsheets/d/e/2PACX-1vRps3APzgmwwc2DIkKENuy4VZxGP3__2DN2AoiUOKsBZCq7ViPLKUJi68yG-Lk-tfNoA6jzVyYKEaQj/pub?output=csv" downloadLink="https://docs.google.com/spreadsheets/d/e/2PACX-1vRps3APzgmwwc2DIkKENuy4VZxGP3__2DN2AoiUOKsBZCq7ViPLKUJi68yG-Lk-tfNoA6jzVyYKEaQj/pub?output=csv">}} 
-
----
-
-<!-- Particles Background -->
-<!-- This section adds a dynamic particles background to your page. -->
-<div id="particles-js" style="position: absolute; width: 100%; height: 100%;"></div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    particlesJS('particles-js', {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: 3 },
-        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 2 }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
-        modes: { repulse: { distance: 100 }, push: { particles_nb: 4 } }
-      }
-    });
-  });
-</script>
-
-
-
-
+In addition to consulting with my guidance counselors, I sought counsel from Pitt alumni, whose insights were instrumental in my decision-making process. One such alumnus, Ben Alhmark , an acquaintance of my father, shared his formative experiences at Pitt, particularly how it jumpstarted his co-op journey [4]. Hearing about professors who exuded genuine passion for their subjects ignited my enthusiasm for the courses they offered. Alumni from my high school extolled the city's vibrant ambiance and the multitude of opportunities offered by student organizations, further affirming my choice to join the Pitt community.

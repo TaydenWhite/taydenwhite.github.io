@@ -6,10 +6,10 @@ description: >
   In the spring semester of my freshman year, I collaborated with two of my peers on a paper regarding the usage of artificial intelligence in waste management. We presented this paper in a conference dedicated to first year engineering students. View the paper here: 
 author: Aarya Dani 
 resources:
-  - src: "**.{png,jpg}"
-    title: "Image #:counter"
+  - src: 
+    title: 
     params:
-      byline: "Photo: Riona MacNamara / CC-BY-CA"
+      byline: 
 ---
 
 <style>

@@ -6,10 +6,10 @@ description: >
   In my Physics 2 course, I was presented with conducting certain experiments and documenting them, while also writing a full laboratory report. Check them out!
 author: Aarya Dani 
 resources:
-  - src: "**.{png,jpg}"
-    title: "Image #:counter"
+  - src: 
+    title: 
     params:
-      byline: "Photo: Riona MacNamara / CC-BY-CA"
+      byline: 
 ---
 
 <style>
