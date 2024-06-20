@@ -8,13 +8,6 @@ menu: {main: {weight: 10}}
 
 <p style="font-size: 1.2em; margin-top: 1em;">This is a simple up-to-date tutorial on how to deploy a Docsy-themed Hugo website on GitHub Pages.</p>
 
-<video width="640" height="480" controls>
-  <source src="/videos/my-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
----
-
 **Step 1: Prerequisites**
 
 Go to the [Docsy: Before You Begin](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/) page to download the necessary prerequisites.
