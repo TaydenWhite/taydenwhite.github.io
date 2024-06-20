@@ -15,60 +15,51 @@ title: Aarya's Website
 
 
 {{% blocks/lead color="primary" %}}
-**Ballerboyswag**
+**Welcome to Aarya's Hugo Website!**
 
-The purpose of this website is to just showcase certain skills that might be pertinant to J&J
+The purpose of this website is to showcase my skills and projects.
 {{% /blocks/lead %}}
 
+{{% blocks/section color="info" %}}
+## About Me
 
-{{% blocks/section color="dark" type="row" %}}
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
+I have always had problems with my vision since I was very young. Along with my nearsightedness and colorblindness, I was recently diagnosed with keratoconus, which, if left untreated, can lead to permanent vision loss. A corneal cross-linking procedure stabilized my condition but cost thousands of dollars. This incident is not limited to me - it is an issue that has lasted for decades and has affected millions of individuals. Even with the Affordable Care Act, millions of Americans still cannot afford these treatments. A life-saving treatment should not cost thousands of dollars for those suffering from diseases they cannot control. 
 
-Please follow this space for updates!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
-{{% /blocks/feature %}}
-
+My goal is to make any of these procedures affordable and accessible to everyone. In addition to working with policymakers, insurance providers, and healthcare companies, I want to research the use of technology such as CRISPR and CAR T-cells to see if they can bring down costs and create permanent solutions to unmet medical needs. CRISPR is like molecular scissors - snipping and keeping important genes, or cutting those that harm humans. Whether it be heart disease, HIV, or even cancer, CRISPR can be used to fix the human genome and prevent these diseases from ever existing in the human body. The technology of manipulating genes - and the fact that can be an easily accessible treatment that could save lives - would change the world. 
 
 {{% /blocks/section %}}
 
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    marquee {
+      background-color: lightblue;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      font-family: Verdana, sans-serif;
+      scroll-delay: 100;
+    }
+  </style>
+</head>
+<body>
 
-{{% blocks/section %}}
-This is the second section
-{.h1 .text-center}
-{{% /blocks/section %}}
+<marquee>Aarya is super cool</marquee>
 
+</body>
+</html>
 
 {{% blocks/section type="row" %}}
-
-{{% blocks/feature icon="fab fa-app-store-ios" title="Download **from AppStore**" %}}
-Get the Goldydocs app!
+{{% blocks/feature icon="fab fa-linkedin" title="Professional Network" url="https://www.linkedin.com/in/aarya-dani-82413b287/" %}}
+Connect with me on LinkedIn to expand your professional network and explore potential collaborations.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!"
-    url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls)
-contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fab fa-instagram" title="Follow on Instagram" url="https://www.instagram.com/_aaryadani/" %}}
+Follow my Instagram for behind-the-scenes looks at my projects and personal life.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!"
-    url="https://twitter.com/GoHugoIO" %}}
-For announcement of latest features etc.
+{{% blocks/feature icon="fab fa-youtube" title="Watch Tutorials" url="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099" %}}
+Subscribe to my YouTube channel to see some of the content that I narrated.
 {{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-
-{{% blocks/section %}}
-This is the another section
-{.h1 .text-center}
 {{% /blocks/section %}}
