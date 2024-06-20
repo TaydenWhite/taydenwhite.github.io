@@ -83,7 +83,7 @@ on Linux.
 1. Verify that the service is working.
 
    Open your web browser and type `http://localhost:1313` in your navigation bar,
-   This opens a local instance of the docsy-example homepage. You can now make
+   This opens a local instance of the docsy-example Home. You can now make
    changes to the docsy example and those changes will immediately show up in your
    browser after you save.
 

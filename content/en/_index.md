@@ -23,9 +23,7 @@ The purpose of this website is to showcase my skills and projects.
 {{% blocks/section color="info" %}}
 ## About Me
 
-I have always had problems with my vision since I was very young. Along with my nearsightedness and colorblindness, I was recently diagnosed with keratoconus, which, if left untreated, can lead to permanent vision loss. A corneal cross-linking procedure stabilized my condition but cost thousands of dollars. This incident is not limited to me - it is an issue that has lasted for decades and has affected millions of individuals. Even with the Affordable Care Act, millions of Americans still cannot afford these treatments. A life-saving treatment should not cost thousands of dollars for those suffering from diseases they cannot control. 
-
-My goal is to make any of these procedures affordable and accessible to everyone. In addition to working with policymakers, insurance providers, and healthcare companies, I want to research the use of technology such as CRISPR and CAR T-cells to see if they can bring down costs and create permanent solutions to unmet medical needs. CRISPR is like molecular scissors - snipping and keeping important genes, or cutting those that harm humans. Whether it be heart disease, HIV, or even cancer, CRISPR can be used to fix the human genome and prevent these diseases from ever existing in the human body. The technology of manipulating genes - and the fact that can be an easily accessible treatment that could save lives - would change the world. 
+Passionate and driven chemical engineering student with a focus on innovation and sustainability. Currently enrolled in the Frederick Honors program at the University of Pittsburgh, where I am actively seeking opportunities to apply my skills and contribute to meaningful projects. Eager to connect with professionals in the field and explore potential collaborations.
 
 {{% /blocks/section %}}
 

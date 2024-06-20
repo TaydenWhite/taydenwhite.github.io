@@ -1,5 +1,5 @@
 baseURL = "https://example.docsy.dev/"
-title = "Goldydocs"
+title = "Home"
 
 # Language settings
 contentDir = "content/en"
@@ -55,7 +55,7 @@ anchor = "smart"
 [languages]
 [languages.en]
 languageName ="English"
-title = "Goldydocs"
+title = "Home"
 [languages.en.params]
 description = "A Docsy example site"
 
@@ -151,7 +151,7 @@ prism_syntax_highlighting = false
 breadcrumb_disable = false
 # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
 navbar_logo = true
-# Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
+# Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the Home.
 navbar_translucent_over_cover_disable = false
 # Enable to show the side bar menu in its compact state.
 sidebar_menu_compact = false

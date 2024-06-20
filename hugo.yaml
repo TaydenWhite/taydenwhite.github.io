@@ -1,5 +1,5 @@
 baseURL: https://example.docsy.dev
-title: Goldydocs
+title: Home
 
 # cSpell:ignore goldmark github hugo readingtime docsy subdir lastmod pygments linenos catmullrom norsk gu
 
@@ -46,7 +46,7 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Goldydocs
+    title: Home
     params:
       description: A Docsy example site
   # cSpell:disable
@@ -154,7 +154,7 @@ params:
     breadcrumb_disable: false
     # Set to false if you don't want to display a logo (/assets/icons/logo.svg) in the top navbar
     navbar_logo: true
-    # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the homepage.
+    # Set to true if you don't want the top navbar to be translucent when over a `block/cover`, like on the Home.
     navbar_translucent_over_cover_disable: false
     # Enable to show the side bar menu in its compact state.
     sidebar_menu_compact: false
