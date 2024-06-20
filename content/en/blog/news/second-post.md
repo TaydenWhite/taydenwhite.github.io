@@ -21,5 +21,3 @@ resources:
 </style>
 
 <iframe class="full-page-iframe" src="https://docs.google.com/document/d/1TO4SfeBNb8XmbFjelIdCMzC5kwfogj064FGbU254Mm8/edit?usp=sharing"></iframe>
-
-

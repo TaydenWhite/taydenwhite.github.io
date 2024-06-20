@@ -1,64 +1,113 @@
 ---
-title: Content
-linkTitle: Content
+title: Deploy a Docsy-themed Hugo website
+linkTitle: Docsy & Hugo Website
 menu: {main: {weight: 10}}
 ---
 
-{{% blocks/cover title="Content" image_anchor="bottom" height="auto" %}}
+## Building a Hugo Website
 
-The purpose of this is to integrate content from my personal use.
-{.mt-5}
+<p style="font-size: 1.2em; margin-top: 1em;">This is a simple up-to-date tutorial on how to deploy a Docsy-themed Hugo website on GitHub Pages.</p>
 
-{{% /blocks/cover %}}
-
-# New York Weather
-
-Stay updated with the current weather in New York City:
-
-<a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
 
 ---
 
-# Nikunj Dani YouTube Video
+**Step 1: Prerequisites**
 
-Explore this insightful video from my Dad filmed in 2014:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2gKGoYYufd0" frameborder="0" allowfullscreen></iframe>
+Go to the [Docsy: Before You Begin](https://www.docsy.dev/docs/get-started/docsy-as-module/installation-prerequisites/) page to download the necessary prerequisites.
 
 ---
 
-## Data Table
+**Step 2: Run Your Website Locally**
 
-Here is a searchable table displaying different speeds of cars:
+Go to the [Docsy example-site repository](https://github.com/google/docsy-example) and click “Use this template” to create your own Docsy repository. Clone your repository into VS Code or any other IDE. Open the terminal in the root folder of your project and run:
 
-{{< searchable-table id="Speed" csvFile="https://docs.google.com/spreadsheets/d/e/2PACX-1vRps3APzgmwwc2DIkKENuy4VZxGP3__2DN2AoiUOKsBZCq7ViPLKUJi68yG-Lk-tfNoA6jzVyYKEaQj/pub?output=csv" downloadLink="https://docs.google.com/spreadsheets/d/e/2PACX-1vRps3APzgmwwc2DIkKENuy4VZxGP3__2DN2AoiUOKsBZCq7ViPLKUJi68yG-Lk-tfNoA6jzVyYKEaQj/pub?output=csv">}} 
+hugo server
 
 ---
 
-<!-- Particles Background -->
-<!-- This section adds a dynamic particles background to your page. -->
-<div id="particles-js" style="position: absolute; width: 100%; height: 100%;"></div>
-<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    particlesJS('particles-js', {
-      particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: 3 },
-        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 2 }
-      },
-      interactivity: {
-        detect_on: "canvas",
-        events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" } },
-        modes: { repulse: { distance: 100 }, push: { particles_nb: 4 } }
-      }
-    });
-  });
-</script>
+**Step 3: Deploy on GitHub Pages**
+
+Follow the instructions in Hugo’s Host on GitHub Pages. At Step 6, instead of using the YAML file provided, use the one below.
+
+```bash
+# Sample workflow for building and deploying a Hugo site to GitHub Pages
+name: Deploy Hugo site to Pages
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.127.0
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb                    
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+      - name: Install Node.js dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Install Docsy
+        run: npm install --save-dev docsy
+      - name: Build with Hugo
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+          TZ: America/Los_Angeles
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "${{ steps.pages.outputs.base_url }}/"                    
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
