@@ -8,10 +8,7 @@ menu: {main: {weight: 10}}
 
 <p style="font-size: 1.2em; margin-top: 1em;">This is a simple up-to-date tutorial on how to deploy a Docsy-themed Hugo website on GitHub Pages.</p>
 
-<video width="600" controls>
-  <source src="/videos/my-video.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rP2sL4pkhhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
