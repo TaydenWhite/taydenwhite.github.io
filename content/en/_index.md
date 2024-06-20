@@ -17,7 +17,7 @@ title: Aarya's Website
 {{% blocks/lead color="primary" %}}
 **Welcome to Aarya's Hugo Website!**
 
-The purpose of this website is to showcase my skills and projects.
+The purpose of this website is to showcase my skills and projects for anyone to see.
 {{% /blocks/lead %}}
 
 {{% blocks/section color="info" %}}
