@@ -1,8 +1,6 @@
 ---
 title: Origin Story
 description: My Vision for Becoming an Engineer
-categories: [Examples, Placeholders]
-tags: [test, docs]
 weight: 2
 ---
 

@@ -13,7 +13,6 @@ title: Aarya's Website
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
-
 {{% blocks/lead color="primary" %}}
 **Welcome to Aarya's Hugo Website!**
 
@@ -24,7 +23,6 @@ The purpose of this website is to showcase my skills and projects for anyone to 
 ## About Me
 
 Passionate and driven chemical engineering student with a focus on innovation and sustainability, graduating in May 2027. I excel at solving complex engineering challenges and thrive in collaborative environments. Currently, I am an undergraduate research assistant conducting advanced cell culturing, electrospinning, biomaterial testing, immunolabeling, fluorescence imaging, and image processing. My relevant coursework includes Honors Calculus, Honors Physics, and General Chemistry, providing a strong foundation in both theoretical and applied aspects of chemical engineering. I possess strong computer skills in C+, MATLAB, Python, R, Hugo, Terminal, and Microsoft Office, as well as extensive laboratory skills, including ELISA, Western Blotting, Southern Blotting, Gram Staining & Cloning, Mammalian Cell Culturing, CRISPR gene editing, 3-D Printing, PCR, and Gel Electrophoresis. Additionally, I hold laboratory certifications in OSHA, CPR, and the CIT Program. Outside of academics, I have a keen interest in music production and video editing.
-
 {{% /blocks/section %}}
 
 <!DOCTYPE html>
@@ -43,7 +41,7 @@ Passionate and driven chemical engineering student with a focus on innovation an
 </head>
 <body>
 
-<marquee>Aarya is super cool</marquee>
+<marquee>Aarya's Docsy Platform!</marquee>
 
 </body>
 </html>
