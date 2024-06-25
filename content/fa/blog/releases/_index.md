@@ -1,4 +1,4 @@
 ---
-title: نسخه های منتشر شده
+title: Projects & Papers
 weight: 20
 ---

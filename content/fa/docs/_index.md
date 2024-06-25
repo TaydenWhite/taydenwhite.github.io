@@ -1,17 +1,30 @@
 ---
-title: مستندات
-linkTitle: مستندات
-menu:
-  main:
-    weight: 20
+title: Documentation
+linkTitle: Docs
+menu: {main: {weight: 20}}
 ---
 
-{{% pageinfo %}}
-این صفحه به شما نشان می‌دهد چگونه از این پوسته استفاده کنید.
-{{% /pageinfo %}}
+Welcome to the documentation for my personal website. This page provides an overview of the features, plugins, and design choices made for showcasing my work and skills.
 
-این قسمت مکانیست که مستندات کاربران در آن قرار دارد. همه‌ی اطلاعاتی که کاربران شما نیاز به فهمیدن دارند تا به درستی از پروژه شما استفاده کنند.
+## Site Overview
 
-برای مستندات بزرگتر ما پیشنهاد می‌کنیم مطالب را طبق این مثال قرار دهید. البته ممکن است بعضی از آنها نیاز نباشد. پس در حذف و اضافه کردن مطالب خود راحت باشید. نمونه کوچکتر مستندات داکسی را می‌توانید در [اینجا](https://docsy.dev/docs/) مشاهده کنید که در [مخزن گیتهاب پوسته داکسی](https://github.com/google/docsy/tree/master/userguide) قرار دارد.
+My website is designed to serve as a showcase of my projects, skills, and interests. It features a modern and responsive design that aims to provide a seamless user experience.
 
-برای فهمیدن چگونگی استفاده از پوسته داکسی، از [رهنمود‌های پوسته داکسی](https://docsy.dev/docs/) استفاده کنید. همچنین می‌توانید در باره‌ی چگونگی مرتب کردن مستندات خود در [اینجا](https://docsy.dev/docs/best-practices/organizing-content/) بخوانید.
+## Technologies Used
+
+- **Frontend:** HTML, CSS, JavaScript 
+- **Hosting:** GitHub Pages
+
+## Design Philosophy
+
+The design of my website focuses on simplicity, usability, and aesthetic appeal. I believe in creating intuitive interfaces that engage users and showcase content effectively.
+
+## Future Plans
+
+I plan to expand the portfolio section to include more projects and enhance the blog with multimedia content. Stay tuned for updates!
+
+## Contact Information
+
+You can reach me via email at [AND321@pitt.edu](AND321@pitt.edu) or connect with me on [LinkedIn](https://www.linkedin.com/in/aarya-dani/).
+
+Thank you for visiting my documentation page. Feel free to explore my website and reach out with any feedback or inquiries.

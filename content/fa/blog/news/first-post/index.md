@@ -1,47 +1,23 @@
 ---
-date: 2018-10-06
-title: مستدات راحت با داکسی
-linkTitle: معرفی داکسی
-description: "پوسته داکسی، قدرت گرفته از هوگو باعث می‌شود که سازندگان پروژه تمرکز خود را روی ساخت مطالب قرار دهند و نیازی به ساخت وبسایت نداشته باشد."
-author: Riona MacNamara ([@rionam](https://twitter.com/bepsays))
+date: 2024-06-15
+title: 
+linkTitle: Lab Notebook 1
+description: >
+  In my Physics 2 course, I was presented with conducting certain experiments and documenting them, while also writing a full laboratory report. Check them out!
+author: Aarya Dani 
 resources:
-- src: 
-  title: 
-  params:
-    byline: 
+  - src: 
+    title: 
+    params:
+      byline: 
 ---
 
-**این یک نوشته معمولی شامل تصویر می باشد.**
+<style>
+  .full-page-iframe {
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust as needed for your header/footer */
+    border: none;
+  }
+</style>
 
-در مشخصات ابتدایی هر مطلب، عنوان، تاریخ و یک خلاصه که در لیست نوشته های نمایش داده می‌شود قرار دارد.
-
-
-## شامل تصویر
-
-اینجا یک تصویر (`featured-sunset-get.png`) که شامل بالاین و کپشن است می‌باشد.
-
-
-{{< imgproc sunset Fill "600x300" >}}
-دریافت و تغییر سایز یک تصویر در نسخه هوگو ۰.۴۳
-{{< /imgproc >}}
-
-
-مشخصات زیر که در اطلاعات پست آمده است روی تمامی تصاویر این پست اعمال می‌شوند:
-
-```
-resources:
-- src: 
-  title: 
-  params:
-    byline: 
-```
-
-برای افزودن تصویر در یک صفحه، مشخصات آن را به صورت زیر مشخص کنید:
-
-```
-{{< imgproc sunset Fill "600x300" >}}
-دریافت و تغییر سایز یک تصویر در نسخه هوگو ۰.۴۳
-{{< /imgproc >}}
-```
-
-تصاویر در اندازه و با بایلاین مشخص شده نمایش داده می‌شوند.
+<iframe class="full-page-iframe" src="https://docs.google.com/document/d/1asDtFIWYtvK0mK3xxRuUIPYvu4Q1SqdZ81SZDyOY0Kc/edit?usp=sharing"></iframe>

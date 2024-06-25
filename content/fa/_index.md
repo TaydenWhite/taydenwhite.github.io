@@ -1,75 +1,61 @@
 ---
-title: اسناد گلدی
+title: Aarya's Website
 ---
 
-{{< blocks/cover title="به اسناد گلدی خوش آمدید. این یک نمونه برای پوسته داکسی می‌باشد." image_anchor="top" height="full" >}}
+{{< blocks/cover title="Aarya's Docsy Website!" image_anchor="top" height="full" >}}
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-    بیشتر بخوانید <i class="fas fa-arrow-alt-circle-left ms-2"></i>
+  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
-    دانلود <i class="fab fa-github ms-2 "></i>
+  Download <i class="fab fa-github ms-2 "></i>
 </a>
-<p class="lead mt-5">ارزیابی درجه حرارت فرنی - در فضای ابری!</p>
+<p class="lead mt-5">Working on coding skills &mdash; day by day!</p>
 {{< blocks/link-down color="info" >}}
 {{< /blocks/cover >}}
 
-
 {{% blocks/lead color="primary" %}}
-اسناد گلدی یک وبسایت آماده کرده است درباره ارزیابی در حرارت فرنی، سایز صندلی و مشخصه های نرمی!
-شما حتی خواهید فهمید چه کسی فرنی **شما** را خورده است!
+**Welcome to Aarya's Hugo Website!**
 
-متاسفانه، اسناد گلدی یک وبسایت واقعی نیست، اما شما می‌توانید از آن به عنوان یک نمونه برای ساخت وبسایت واقعی خودتان با
-[داکسی](https://docsy.dev) استفاده کنید.
-
+The purpose of this website is to showcase my skills and projects for anyone to see.
 {{% /blocks/lead %}}
 
-{{< blocks/section color="dark" type="row" >}}
-{{% blocks/feature icon="fa-lightbulb" title="معیارهای جدید صندلی!" %}}
-اسناد گلدی به شما معیارهای اندازه صندلی را به شما نشان می‌دهد.
+{{% blocks/section color="info" %}}
+## About Me
 
-برای اطلاع از به روز رسانی ها دنبال کنید.
+Passionate and driven chemical engineering student with a focus on innovation and sustainability, graduating in May 2027. I excel at solving complex engineering challenges and thrive in collaborative environments. Currently, I am an undergraduate research assistant conducting advanced cell culturing, electrospinning, biomaterial testing, immunolabeling, fluorescence imaging, and image processing. My relevant coursework includes Honors Calculus, Honors Physics, and General Chemistry, providing a strong foundation in both theoretical and applied aspects of chemical engineering. I possess strong computer skills in C+, MATLAB, Python, R, Hugo, Terminal, and Microsoft Office, as well as extensive laboratory skills, including ELISA, Western Blotting, Southern Blotting, Gram Staining & Cloning, Mammalian Cell Culturing, CRISPR gene editing, 3-D Printing, PCR, and Gel Electrophoresis. Additionally, I hold laboratory certifications in OSHA, CPR, and the CIT Program. Outside of academics, I have a keen interest in music production and video editing.
+{{% /blocks/section %}}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    marquee {
+      background-color: lightblue;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      font-family: Verdana, sans-serif;
+      scroll-delay: 100;
+    }
+  </style>
+</head>
+<body>
+
+<marquee>Aarya's Docsy Platform!</marquee>
+
+</body>
+</html>
+
+{{% blocks/section type="row" %}}
+{{% blocks/feature icon="fab fa-linkedin" title="Professional Network" url="https://www.linkedin.com/in/aarya-dani-82413b287/" %}}
+Connect with me on LinkedIn to expand your professional network and explore potential collaborations.
 {{% /blocks/feature %}}
 
-
-{{% blocks/feature icon="fab fa-github" title="همکاری" url="https://github.com/google/docsy-example" %}}
-ما یک فرآیند [پول ریکوئست](https://github.com/google/docsy-example/pulls) در **گیتهاب** داریم. ما همیشه از همکاران جدید
-خوشحال می‌شویم.
+{{% blocks/feature icon="fab fa-instagram" title="Follow on Instagram" url="https://www.instagram.com/_aaryadani/" %}}
+Follow my Instagram for behind-the-scenes looks at my projects and personal life.
 {{% /blocks/feature %}}
 
-
-{{% blocks/feature icon="fab fa-twitter" title="ما را در توییتر دنبال کنید." url="https://twitter.com/docsydocs" %}}
-برای اطلاع از آخرین خبرها
+{{% blocks/feature icon="fab fa-youtube" title="Watch Tutorials" url="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099" %}}
+Subscribe to my YouTube channel to see some of the content that I narrated.
 {{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-
-{{< blocks/section >}}
-  <h1 class="text-center">این قسمت دوم است.</h1>
-{{< /blocks/section >}}
-
-
-
-{{< blocks/section type="row" >}}
-{{% blocks/feature icon="fab fa-app-store-ios" title="از **فروشگاه اپ استور** دانلود کنید" %}}
-Get the Goldydocs app!
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-github" title="همکاری" url="https://github.com/google/docsy-example" %}}
-ما یک فرآیند [پول ریکوئست](https://github.com/google/docsy-example/pulls) در **گیتهاب** داریم. ما همیشه از همکاران جدید
-خوشحال می‌شویم.
-{{% /blocks/feature %}}
-
-
-{{% blocks/feature icon="fab fa-twitter" title="ما را در توییتر دنبال کنید." url="https://twitter.com/GoHugoIO" %}}
-برای اطلاع از آخرین خبرها
-{{% /blocks/feature %}}
-
-
-{{< /blocks/section >}}
-
-{{< blocks/section >}}
-  <h1 class="text-center">این یک قسمت دیگر است.</h1>
-{{< /blocks/section >}}
+{{% /blocks/section %}}

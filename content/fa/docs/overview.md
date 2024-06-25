@@ -1,36 +1,16 @@
 ---
-title: مرور کلی
-description: در اینجا کاربران شما متوجه می‌شوند که آیا پروژه شما برای آن‌ها مناسب است یا نه.
+title: Overview
+description: Here's where I tell my story about why I chose Pitt.
 weight: 1
 ---
+# Why Pitt?
 
-{{% pageinfo %}}
+Selecting a college was a significant and, at times, daunting decision for me. Amidst the array of choices, the University of Pittsburgh’s Swanson School of Engineering emerged as a well-rounded option that truly resonated with my aspirations. Multiple factors, including the environment, education, research, and advice from former alumni led me to choose the SSOE. 
 
-این یک صفحه جایگزین است که به شما نشان می‌دهد چگونه از این سایت الگو استفاده کنید.
+Cities have always held a special allure for me – the bustling energy, architectural splendor, and diverse tapestry of inhabitants. Simultaneously, I yearned for the quintessential college campus experience, where collaborative studying and shared activities thrive. Fortunately, Pitt offers the best of both worlds, nestled within an urban setting while boasting a welcoming campus.
+	
+Educational quality ranked highest among my considerations, particularly within my field of engineering. I found reassurance in the consistent recognition of the University of Pittsburgh by reputable sources such as U.S. News and Niche, consistently positioning it among the nation's top 50 engineering institutions. These accolades extended across various engineering disciplines, aligning with my interests. Nevertheless, my definitive choice of engineering branch remained uncertain. Pitt's freshman engineering program's flexibility to declare a specific major during the spring semester alleviated this concern, affording me the time and space to explore my passions and make a judicious choice for my academic journey.
 
-{{% /pageinfo %}}
+Furthermore, the university endows its students with a wealth of resources dedicated to the School of Engineering, with a strong emphasis on research – a domain close to my heart. Pitt's designation as an R1 research university further bolstered my confidence in its academic offerings. The presence of distinguished researchers and dedicated professors, some of whom I have the privilege of learning from now, stood as compelling reasons behind my choice. The availability of research opportunities for undergraduates, even incoming freshmen, far exceeded what I encountered at other institutions.
 
-مرور کلی جایی است که کاربران شما درباره پروژه شما اطلاعات کسب می‌کنند. بسته به اندازه مجموعه مستندات شما، می‌توانید یک صفحه مرور جداگانه داشته باشید (مثل این یکی) یا محتوای مرور خود را در صفحه اصلی مستندات قرار دهید (مثل راهنمای کاربر Docsy).
-
-سعی کنید به این سوالات برای کاربر خود در این صفحه پاسخ دهید:
-
-## این چیست؟
-
-پروژه خود را معرفی کنید، از جمله کاری که انجام می‌دهد یا به شما اجازه می‌دهد انجام دهید، چرا باید از آن استفاده کنید، و هدف اصلی آن (و چگونه به آن دست می‌یابد). این باید شبیه به توضیحات README شما باشد، اگرچه می‌توانید در صورت تمایل به جزئیات بیشتری در اینجا بپردازید.
-
-## چرا می‌خواهم آن را داشته باشم؟
-
-به کاربران خود کمک کنید بدانند آیا پروژه شما به آن‌ها کمک می‌کند یا نه. اطلاعات مفید می‌تواند شامل موارد زیر باشد:
-
-- **برای چه خوب است؟**: چه نوع مشکلاتی را پروژه شما حل می‌کند؟ مزایای استفاده از آن چیست؟
-
-- **برای چه خوب نیست؟**: به عنوان مثال، شرایطی را ذکر کنید که ممکن است به صورت شهودی مناسب پروژه شما به نظر برسد، اما به دلایلی مناسب نیست. همچنین محدودیت‌های شناخته شده، مشکلات مقیاس‌پذیری، یا هر چیز دیگری که ممکن است به کاربران شما بگوید که پروژه برای آن‌ها نیست را ذکر کنید.
-
-- **برای چه _هنوز_ خوب نیست؟**: هر ویژگی مفیدی که به زودی می‌آید را برجسته کنید.
-
-## بعد کجا باید بروم؟
-
-گام‌های بعدی را از مرور کلی به کاربران خود بدهید. به عنوان مثال:
-
-- [شروع کار](/docs/getting-started/): با $project شروع کنید
-- [مثال‌ها](/docs/examples/): برخی کدهای نمونه را بررسی کنید!
+In addition to consulting with my guidance counselors, I sought counsel from Pitt alumni, whose insights were instrumental in my decision-making process. One such alumnus, Ben Alhmark , an acquaintance of my father, shared his formative experiences at Pitt, particularly how it jumpstarted his co-op journey [4]. Hearing about professors who exuded genuine passion for their subjects ignited my enthusiasm for the courses they offered. Alumni from my high school extolled the city's vibrant ambiance and the multitude of opportunities offered by student organizations, further affirming my choice to join the Pitt community.

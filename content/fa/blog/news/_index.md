@@ -1,5 +1,4 @@
 ---
-title: اخبار داکسی
-linkTitle: اخبار
+title: Lab Reports
 weight: 20
 ---
