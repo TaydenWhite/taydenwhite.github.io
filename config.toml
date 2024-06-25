@@ -15,3 +15,17 @@ title = "My New Hugo Site"
       unsafe = true
   [markup.highlight]
     noClasses = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON", "MP3"]
+
+[[outputs.MP3]]
+  content_type = "audio/mpeg"
+  media_types = ["mp3"]
+
+[menu]
+  [[menu.main]]
+    identifier = "audio"
+    name = "Audio"
+    url = "/audio/"
+    weight = 3  # Adjust the weight to control the position in the menu
