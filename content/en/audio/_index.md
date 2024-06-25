@@ -1,5 +1,7 @@
 ---
 title: "Audio Files"
+linkTitle: Audio
+menu: {main: {weight: 50}}
 ---
 
 ## Available Audio Files
