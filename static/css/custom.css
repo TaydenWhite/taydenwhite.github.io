@@ -9,4 +9,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold; /* Adjust font weight if necessary */
 }
 
-/* Additional styling as needed */
+.gif-background {
+  background: url('https://file.notion.so/f/f/66b2b53d-b133-4203-afac-6437a8b63c70/170fd7f4-0be0-4789-b507-e95961cd12e5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7957675f6f55416c6a30635238673d3d2d3636363139353136382e313537303.gif?id=f30f2290-d79f-451b-8ffe-7e11811f07f4&table=block&spaceId=66b2b53d-b133-4203-afac-6437a8b63c70&expirationTimestamp=1719864000000&signature=QC4F_WugKdS2bPxSbEXulgQ8ajRQk9TtCUFylNShHIo') no-repeat center center;
+  background-size: cover;
+  color: white; /* Adjust text color for readability */
+  padding: 100px 20px; /* Adjust padding for desired height */
+  text-align: center;
+}

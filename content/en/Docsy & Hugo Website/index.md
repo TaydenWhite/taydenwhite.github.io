@@ -1,7 +1,9 @@
 ---
 title: Deploy a Docsy-themed Hugo website
 linkTitle: Docsy & Hugo Website
-menu: {main: {weight: 10}}
+menu:
+  main:
+    weight: 10
 ---
 
 ## Building a Hugo Website
@@ -28,7 +30,7 @@ hugo server
 
 Follow the instructions in Hugo’s Host on GitHub Pages. At Step 6, instead of using the YAML file provided, use the one below.
 
-```bash
+```yaml
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
@@ -110,4 +112,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

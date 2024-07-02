@@ -1,6 +1,11 @@
 // Example main.scss file
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Apply Helvetica Neue or fallback to Helvetica, Arial */
     background-color: #f0f0f0;
 }
 
+$primary: #0F1C70;
+$secondary: #f0f0f0;
+
+$google_font_name: 'Verdana';
+$google_font_family: 'Verdana, serif';
