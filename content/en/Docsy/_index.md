@@ -1,6 +1,6 @@
 ---
 title: "Deploy a Docsy-themed Hugo website"
-linkTitle: Docsy & Hugo Website
+linkTitle: Website Tutorial
 menu: {main: {weight: 10}}
 ---
 
