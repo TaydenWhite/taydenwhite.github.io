@@ -1,0 +1,40 @@
+.btn-lg {
+    font-size: 20px; /* Increased font size */
+    padding: 0;
+  }
+  
+  .btn-social {
+    width: 60px; /* Increased button size */
+    height: 60px; /* Increased button size */
+    font-size: 28px; /* Increased icon size */
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-social:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn-linkedin {
+    background-color: #0077b5; /* LinkedIn color */
+    color: #fff; /* White text */
+  }
+  
+  .btn-instagram {
+    background-color: #e4405f; /* Instagram color */
+    color: #fff; /* White text */
+  }
+  
+  .btn-youtube {
+    background-color: #ff0000; /* YouTube color */
+    color: #fff; /* White text */
+  }
+  
+  .btn-github {
+    background-color: #333; /* GitHub color */
+    color: #fff; /* White text */
+  }
+  
