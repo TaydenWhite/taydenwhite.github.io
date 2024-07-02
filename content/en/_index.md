@@ -2,43 +2,43 @@
 title: Aarya Dani
 ---
 
-
 <head>
   <style>
     .btn-social {
-  background-color: #ff0000; /* YouTube red */
-  color: #fff; /* White text */
-  width: 60px; /* Increased button size */
-  height: 60px; /* Increased button size */
-  font-size: 28px; /* Increased icon size */
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.btn-social.btn-linkedin {  /* Target LinkedIn button */
-  background-color: #0077b5; /* LinkedIn blue */
-  color: #fff; /* White text */
-}
-.btn-social.btn-instagram {
-  background: linear-gradient(to right, #f44336, #e91e63); /* Purple to orange gradient */
-  color: #fff; /* White text */
-}
-.btn-social.btn-github {
-  background-color: #333; /* GitHub dark gray */
-  color: #fff; /* White text */
-}
-.btn-social:hover {
-  background-color: #e00000; /* Slightly darker red on hover */
-}
+      background-color: #ff0000; /* YouTube red */
+      color: #fff; /* White text */
+      width: 60px; /* Increased button size */
+      height: 60px; /* Increased button size */
+      font-size: 28px; /* Increased icon size */
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+    .btn-social.btn-linkedin {  /* Target LinkedIn button */
+      background-color: #0077b5; /* LinkedIn blue */
+      color: #fff; /* White text */
+    }
+    .btn-social.btn-instagram {
+      background: linear-gradient(to right, #f44336, #e91e63); /* Purple to orange gradient */
+      color: #fff; /* White text */
+    }
+    .btn-social.btn-github {
+      background-color: #333; /* GitHub dark gray */
+      color: #fff; /* White text */
+    }
+    .btn-social:hover {
+      background-color: #e00000; /* Slightly darker red on hover */
+    }
   </style>
 </head>
 
-
-
 {{< blocks/cover title="Aarya Dani" image_anchor="top" height="full" >}}
-<p class="lead mt-5">Skilled chemical engineering student with a focus on problem-solving and complex challenges. Experienced in data science, biomaterial testing, and fluorescence imaging. Interned at Johnson & Johnson in data science, contributing to predictive analysis. Currently conducting research at the University of Pittsburgh while serving as Vice President at Delta Tau Delta, organizing chapter activities.</p>
+<p class="lead mt-5">I specialize in chemical engineering with a strong focus on bioengineering, aiming to enhance the affordability and accessibility of medical products. Over the years, I have cultivated expertise in data science and biotechnology. Currently at Johnson & Johnson, I leverage my skills to develop Hugo websites that effectively showcase diverse datasets. Drawing from my engineering background, I am passionate about bridging the gap between engineering principles, data science insights, user requirements, and cutting-edge technology.</p>
+
+<p>Here is some of my social media:</p>
+
 <div class="container">
   <div class="row">
     <div class="col-lg-8 mx-auto text-center">
