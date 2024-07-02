@@ -1,9 +1,7 @@
 ---
-title: Deploy a Docsy-themed Hugo website
+title: "Deploy a Docsy-themed Hugo website"
 linkTitle: Docsy & Hugo Website
-menu:
-  main:
-    weight: 10
+menu: {main: {weight: 10}}
 ---
 
 ## Building a Hugo Website
@@ -26,7 +24,7 @@ hugo server
 
 ---
 
-**Step 3: Deploy on GitHub Pages**
+## Step 3: Deploy on GitHub Pages
 
 Follow the instructions in Hugo’s Host on GitHub Pages. At Step 6, instead of using the YAML file provided, use the one below.
 

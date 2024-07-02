@@ -29,3 +29,8 @@ title = "My New Hugo Site"
     name = "Audio"
     url = "/audio/"
     weight = 3  # Adjust the weight to control the position in the menu
+    [menu]
+  [[menu.main]]
+    name = "Docsy & Hugo Website"
+    url = "/path/to/page/"
+    weight = 10
