@@ -23,7 +23,7 @@ Connect with me on LinkedIn to expand your professional network and explore pote
 Follow my Instagram for behind-the-scenes looks at my projects and personal life.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-youtube" title="Watch Tutorials" url="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099" %}}
+{{% blocks/feature icon="fab fa-youtube" title="YouTube Content" url="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099" %}}
 Subscribe to my YouTube channel to see some of the content that I narrated.
 {{% /blocks/feature %}}
 {{% /blocks/section %}}
