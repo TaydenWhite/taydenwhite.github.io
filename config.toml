@@ -34,3 +34,14 @@ title = "My New Hugo Site"
     name = "Docsy & Hugo Website"
     url = "/path/to/page/"
     weight = 10
+  [menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "coding-projects"
+    name = "Coding Projects"
+    url = "/coding-projects/"
+    weight = 20
