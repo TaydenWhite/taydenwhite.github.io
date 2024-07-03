@@ -1,7 +1,7 @@
 ---
 title: "Audio Files"
 description: >
-  What type of job should I expect to obtain once leaving college? 
+  Some of the beats that I have produced.
 weight: 4
 ---
 
