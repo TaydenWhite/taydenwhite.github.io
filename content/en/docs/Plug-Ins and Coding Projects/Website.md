@@ -1,7 +1,9 @@
 ---
-title: "Deploy a Docsy-themed Hugo website"
-linkTitle: Website Tutorial
-menu: {main: {weight: 10}}
+title: Website Tutorial
+description: >
+  Deploy a Docsy-themed Hugo website
+date: 2017-01-05
+weight: 1
 ---
 
 ## Building a Hugo Website
