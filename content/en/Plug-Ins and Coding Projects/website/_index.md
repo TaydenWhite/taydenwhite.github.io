@@ -1,5 +1,6 @@
 ---
 title: Website Tutorial
+linkTitle: Website Tutorial
 description: >
   Deploy a Docsy-themed Hugo website
 date: 2017-01-05

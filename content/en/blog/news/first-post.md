@@ -1,6 +1,6 @@
 ---
 date: 2024-06-15
-title: 
+title: Lab Notebook 1
 linkTitle: Lab Notebook 1
 description: >
   In my Physics 2 course, I was presented with conducting certain experiments and documenting them, while also writing a full laboratory report. Check them out!
