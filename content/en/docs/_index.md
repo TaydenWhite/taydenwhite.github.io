@@ -5,12 +5,6 @@ menu: {main: {weight: 20}}
 ---
 
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
-  }
   .about-section {
     max-width: 800px;
     margin: 0 auto;
