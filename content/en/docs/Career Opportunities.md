@@ -1,5 +1,5 @@
 ---
-title: Careeer Opportunities
+title: Career Opportunities
 description: >
   What type of job should I expect to obtain once leaving college? 
 weight: 4
