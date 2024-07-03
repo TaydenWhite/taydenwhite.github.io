@@ -15,4 +15,4 @@ menu: {main: {weight: 50}}
 - [Gold Standard](/audio/Gold_Standard.mp3) ([Download](/audio/Gold_Standard.mp3))
 - [CollegeDropoutBeat](/audio/CollegeDropoutBeat.mp3) ([Download](/audio/CollegeDropoutBeat.mp3))
 
-You can listen to the audio files above by clicking on the links.
+Here are some of the beats I have produced.

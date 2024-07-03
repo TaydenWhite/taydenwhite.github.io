@@ -1,7 +1,8 @@
 ---
 title: "Audio Files"
-linkTitle: Audio
-menu: {main: {weight: 50}}
+description: >
+  What type of job should I expect to obtain once leaving college? 
+weight: 4
 ---
 
 ## Available Audio Files
