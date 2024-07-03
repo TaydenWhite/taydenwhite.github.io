@@ -1,60 +1,61 @@
 ---
-title: Aarya Dani
+title: Aarya's Website
 ---
 
+{{< blocks/cover title="Aarya's Docsy Website!" image_anchor="top" height="full" >}}
+<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
+  Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+</a>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/google/docsy-example">
+  Download <i class="fab fa-github ms-2 "></i>
+</a>
+<p class="lead mt-5">Working on coding skills &mdash; day by day!</p>
+{{< blocks/link-down color="info" >}}
+{{< /blocks/cover >}}
+
+{{% blocks/lead color="primary" %}}
+**Welcome to Aarya's Hugo Website!**
+
+The purpose of this website is to showcase my skills and projects for anyone to see.
+{{% /blocks/lead %}}
+
+{{% blocks/section color="info" %}}
+## About Me
+
+Passionate and driven chemical engineering student with a focus on innovation and sustainability, graduating in May 2027. I excel at solving complex engineering challenges and thrive in collaborative environments. Currently, I am an undergraduate research assistant conducting advanced cell culturing, electrospinning, biomaterial testing, immunolabeling, fluorescence imaging, and image processing. My relevant coursework includes Honors Calculus, Honors Physics, and General Chemistry, providing a strong foundation in both theoretical and applied aspects of chemical engineering. I possess strong computer skills in C+, MATLAB, Python, R, Hugo, Terminal, and Microsoft Office, as well as extensive laboratory skills, including ELISA, Western Blotting, Southern Blotting, Gram Staining & Cloning, Mammalian Cell Culturing, CRISPR gene editing, 3-D Printing, PCR, and Gel Electrophoresis. Additionally, I hold laboratory certifications in OSHA, CPR, and the CIT Program. Outside of academics, I have a keen interest in music production and video editing.
+{{% /blocks/section %}}
+
+<!DOCTYPE html>
+<html>
 <head>
   <style>
-    .btn-social {
-      background-color: #ff0000; /* YouTube red */
-      color: #fff; /* White text */
-      width: 60px; /* Increased button size */
-      height: 60px; /* Increased button size */
-      font-size: 28px; /* Increased icon size */
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-    }
-    .btn-social.btn-linkedin {  /* Target LinkedIn button */
-      background-color: #0077b5; /* LinkedIn blue */
-      color: #fff; /* White text */
-    }
-    .btn-social.btn-instagram {
-      background: linear-gradient(to right, #f44336, #e91e63); /* Purple to orange gradient */
-      color: #fff; /* White text */
-    }
-    .btn-social.btn-github {
-      background-color: #333; /* GitHub dark gray */
-      color: #fff; /* White text */
-    }
-    .btn-social:hover {
-      background-color: #e00000; /* Slightly darker red on hover */
+    marquee {
+      background-color: lightblue;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      font-family: Verdana, sans-serif;
+      scroll-delay: 100;
     }
   </style>
 </head>
+<body>
 
-{{< blocks/cover title="Aarya Dani" image_anchor="top" height="full" >}}
-<p class="lead mt-5">Hello, I am Aarya Dani. I attend the University of Pittsburgh, currently studying chemical engineering. In addition, I have a strong interest on bioengineering, aiming to enhance the affordability and accessibility of medical products. Over the years, I have cultivated expertise in data science and biotechnology. Currently at Johnson & Johnson, I leverage my skills to develop Hugo websites that effectively showcase diverse datasets. Drawing from my engineering background, I am passionate about bridging the gap between engineering principles, data science insights, user requirements, and cutting-edge technology.</p>
+<marquee>Aarya's Docsy Platform!</marquee>
 
-<p>Here is some of my social media:</p>
+</body>
+</html>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 mx-auto text-center">
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-linkedin" href="https://www.linkedin.com/in/aarya-dani-82413b287/">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-instagram" href="https://www.instagram.com/_aaryadani/">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-youtube" href="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-github" href="https://github.com/AaryaDani">
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-  </div>
-</div>
-{{< /blocks/cover >}}
+{{% blocks/section type="row" %}}
+{{% blocks/feature icon="fab fa-linkedin" title="Professional Network" url="https://www.linkedin.com/in/aarya-dani-82413b287/" %}}
+Connect with me on LinkedIn to expand your professional network and explore potential collaborations.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fab fa-instagram" title="Follow on Instagram" url="https://www.instagram.com/_aaryadani/" %}}
+Follow my Instagram for behind-the-scenes looks at my projects and personal life.
+{{% /blocks/feature %}}
+
+{{% blocks/feature icon="fab fa-youtube" title="Watch Tutorials" url="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099" %}}
+Subscribe to my YouTube channel to see some of the content that I narrated.
+{{% /blocks/feature %}}
+{{% /blocks/section %}}

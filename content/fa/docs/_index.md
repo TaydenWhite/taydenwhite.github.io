@@ -1,6 +1,6 @@
 ---
-title: About Me
-linkTitle: #Me
+title: Documentation
+linkTitle: Docs
 menu: {main: {weight: 20}}
 ---
 
