@@ -42,16 +42,16 @@ title: Aarya Dani
 <div class="container">
   <div class="row">
     <div class="col-lg-8 mx-auto text-center">
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-linkedin" href="https://www.linkedin.com/in/aarya-dani-82413b287/">
+      <a class="btn btn-lg btn-social me-3 mb-4 btn-linkedin" href="https://www.linkedin.com/in/aarya-dani-82413b287/" target="_blank">
         <i class="fab fa-linkedin-in"></i>
       </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-instagram" href="https://www.instagram.com/_aaryadani/">
+      <a class="btn btn-lg btn-social me-3 mb-4 btn-instagram" href="https://www.instagram.com/_aaryadani/" target="_blank">
         <i class="fab fa-instagram"></i>
       </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-youtube" href="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099">
+      <a class="btn btn-lg btn-social me-3 mb-4 btn-youtube" href="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099" target="_blank">
         <i class="fab fa-youtube"></i>
       </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-github" href="https://github.com/AaryaDani">
+      <a class="btn btn-lg btn-social me-3 mb-4 btn-github" href="https://github.com/AaryaDani" target="_blank">
         <i class="fab fa-github"></i>
       </a>
     </div>
