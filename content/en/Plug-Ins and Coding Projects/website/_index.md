@@ -29,7 +29,7 @@ hugo server
 
 ## Step 3: Deploy on GitHub Pages
 
-Follow the instructions in Hugo’s Host on GitHub Pages. At Step 6, instead of using the YAML file provided, use the one below.
+Follow the instructions in Hugo’s Host on [GitHub Pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/). At Step 6, instead of using the YAML file provided, use the one below.
 
 ```yaml
 # Sample workflow for building and deploying a Hugo site to GitHub Pages
