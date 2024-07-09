@@ -29,7 +29,8 @@ title: Aarya Dani
       color: #fff; /* White text */
     }
     .btn-social:hover {
-      background-color: #e00000; /* Slightly darker red on hover */
+      background-color: white; 
+      color: #e00000;
     }
   </style>
 </head>
