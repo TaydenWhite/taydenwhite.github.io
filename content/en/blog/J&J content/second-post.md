@@ -1,9 +1,7 @@
 ---
 date: 2024-06-14
-title: J&J Content
-linkTitle: J&J Content
-description: >
-  Throughout my time at J&J, I want to showcase some of the many things that I learned.
+title: Eisenhower Method
+linkTitle: Eisenhower Method
 author: Aarya Dani 
 resources:
   - src: 
