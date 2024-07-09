@@ -3,7 +3,7 @@ date: 2024-06-14
 title: J&J Content
 linkTitle: J&J Content
 description: >
-  Throughout my time at J&J, I learned a variety of different content. Here's some of the many things that I learned.
+  Throughout my time at J&J, I want to showcase some of the many things that I learned.
 author: Aarya Dani 
 resources:
   - src: 
