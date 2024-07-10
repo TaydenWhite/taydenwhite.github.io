@@ -20,4 +20,8 @@ resources:
   }
 </style>
 
-<iframe class="full-page-iframe" src="https://docs.google.com/document/d/1TO4SfeBNb8XmbFjelIdCMzC5kwfogj064FGbU254Mm8/edit?usp=sharing"></iframe>
+
+<iframe src="/pdf/Dani_Aarya_Laboratory Notebook 2 (1).pdf" width="100%" height="600px">
+    This browser does not support PDFs. Please download the PDF to view it: 
+    <a href="/pdf/Dani_Aarya_Laboratory Notebook 2 (1).pdf">Download PDF</a>.
+</iframe>
