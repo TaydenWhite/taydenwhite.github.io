@@ -144,7 +144,7 @@ menu: {main: {weight: 20}}
     <div class="section-content">
       <strong>Computer Skills:</strong> C++, MATLAB, Python, R, Hugo, Terminal, Microsoft Office<br>
       <strong>Laboratory Skills:</strong> ELISA, Western Blotting, Cell Culture, CRISPR gene editing<br>
-      <strong>Interests:</strong> Music Production, Video Editing, Bioengineering, Sustainability
+      <strong>Interests:</strong> Music Production, Video Editing
     </div>
   </div>
 </div>
