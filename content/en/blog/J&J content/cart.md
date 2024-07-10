@@ -35,5 +35,5 @@ Carvykti, also known as ciltacabtagene autoleucel, is a cutting-edge immunothera
 
 Carvykti represents a significant advancement in the treatment of multiple myeloma, offering new possibilities for patients battling this challenging disease.
 
-
+![Eisenhower Matrix](/images/Carvykti.png)
 
