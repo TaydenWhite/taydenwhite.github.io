@@ -1,14 +1,188 @@
-<!-- static/pong.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pong Game</title>
-  <link rel="stylesheet" href="{{ "css/pong.css" | relURL }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Game</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+            margin: 0;
+        }
+        canvas {
+            border: 1px solid white;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <canvas id="pongCanvas"></canvas>
-  <script src="{{ "js/pong.js" | relURL }}"></script>
+    <canvas id="pong" width="800" height="400"></canvas>
+    <button id="pause-button">Pause</button>
+    <script>
+        const canvas = document.getElementById("pong");
+        const ctx = canvas.getContext("2d");
+        const pauseButton = document.getElementById("pause-button");
+
+        let isPaused = false;
+
+        const user = {
+            x: 0,
+            y: canvas.height / 2 - 75, // Increased height
+            width: 15, // Increased width
+            height: 150, // Increased height
+            color: "WHITE",
+            score: 0
+        };
+
+        const com = {
+            x: canvas.width - 15, // Increased width
+            y: canvas.height / 2 - 75, // Increased height
+            width: 15, // Increased width
+            height: 150, // Increased height
+            color: "WHITE",
+            score: 0
+        };
+
+        const ball = {
+            x: canvas.width / 2,
+            y: canvas.height / 2,
+            radius: 10,
+            speed: 5,
+            velocityX: 5,
+            velocityY: 5,
+            color: "WHITE"
+        };
+
+        const net = {
+            x: canvas.width / 2 - 1,
+            y: 0,
+            width: 2,
+            height: 10,
+            color: "WHITE"
+        };
+
+        function drawRect(x, y, w, h, color) {
+            ctx.fillStyle = color;
+            ctx.fillRect(x, y, w, h);
+        }
+
+        function drawCircle(x, y, r, color) {
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, Math.PI * 2, false);
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        function drawText(text, x, y, color) {
+            ctx.fillStyle = color;
+            ctx.font = "45px fantasy";
+            ctx.fillText(text, x, y);
+        }
+
+        function drawNet() {
+            for (let i = 0; i <= canvas.height; i += 15) {
+                drawRect(net.x, net.y + i, net.width, net.height, net.color);
+            }
+        }
+
+        function render() {
+            drawRect(0, 0, canvas.width, canvas.height, "BLACK");
+            drawNet();
+            drawText(user.score, canvas.width / 4, canvas.height / 5, "WHITE");
+            drawText(com.score, 3 * canvas.width / 4, canvas.height / 5, "WHITE");
+            drawRect(user.x, user.y, user.width, user.height, user.color);
+            drawRect(com.x, com.y, com.width, com.height, com.color);
+            drawCircle(ball.x, ball.y, ball.radius, ball.color);
+        }
+
+        function movePaddle(evt) {
+            let rect = canvas.getBoundingClientRect();
+            user.y = evt.clientY - rect.top - user.height / 2;
+        }
+
+        function collision(b, p) {
+            p.top = p.y;
+            p.bottom = p.y + p.height;
+            p.left = p.x;
+            p.right = p.x + p.width;
+
+            b.top = b.y - b.radius;
+            b.bottom = b.y + b.radius;
+            b.left = b.x - b.radius;
+            b.right = b.x + b.radius;
+
+            return p.left < b.right && p.top < b.bottom && p.right > b.left && p.bottom > b.top;
+        }
+
+        function resetBall() {
+            ball.x = canvas.width / 2;
+            ball.y = canvas.height / 2;
+            ball.speed = 5;
+            ball.velocityX = -ball.velocityX;
+        }
+
+        function update() {
+            if (isPaused) return;
+
+            ball.x += ball.velocityX;
+            ball.y += ball.velocityY;
+
+            if (ball.y + ball.radius > canvas.height || ball.y - ball.radius < 0) {
+                ball.velocityY = -ball.velocityY;
+            }
+
+            let player = (ball.x < canvas.width / 2) ? user : com;
+
+            if (collision(ball, player)) {
+                let collidePoint = ball.y - (player.y + player.height / 2);
+                collidePoint = collidePoint / (player.height / 2);
+
+                let angleRad = (Math.PI / 4) * collidePoint;
+
+                let direction = (ball.x < canvas.width / 2) ? 1 : -1;
+                ball.velocityX = direction * ball.speed * Math.cos(angleRad);
+                ball.velocityY = ball.speed * Math.sin(angleRad);
+
+                ball.speed += 0.5;
+            }
+
+            if (ball.x - ball.radius < 0) {
+                com.score++;
+                resetBall();
+            } else if (ball.x + ball.radius > canvas.width) {
+                user.score++;
+                resetBall();
+            }
+
+            com.y += ((ball.y - (com.y + com.height / 2)) * 0.1);
+
+            render();
+        }
+
+        canvas.addEventListener("mousemove", movePaddle);
+
+        pauseButton.addEventListener("click", () => {
+            isPaused = !isPaused;
+            pauseButton.textContent = isPaused ? "Resume" : "Pause";
+        });
+
+        function game() {
+            update();
+        }
+
+        const framePerSecond = 50;
+        setInterval(game, 1000 / framePerSecond);
+    </script>
 </body>
 </html>
