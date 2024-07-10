@@ -22,3 +22,6 @@ The matrix divides tasks into four quadrants:
 4. **Not Urgent, Not Important**: Tasks that are neither urgent nor important. These should be minimized or eliminated.
 
 By categorizing tasks this way, the Eisenhower Method helps individuals focus on what truly matters, reduce stress, and improve productivity.
+
+![Eisenhower Matrix](/images/Eisenhower-Matrix.png)
+
