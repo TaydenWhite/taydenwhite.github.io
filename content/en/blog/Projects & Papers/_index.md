@@ -1,4 +1,6 @@
 ---
 title: Projects & Papers
-weight: 20
+weight: 10
+cascade:
+  - type: "docs"
 ---

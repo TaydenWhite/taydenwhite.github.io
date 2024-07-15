@@ -10,6 +10,8 @@ resources:
     title: 
     params:
       byline: 
+cascade:
+  - type: "docs"
 ---
 
 <style>

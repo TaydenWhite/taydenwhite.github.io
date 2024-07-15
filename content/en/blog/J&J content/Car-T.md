@@ -8,6 +8,8 @@ resources:
     title: 
     params:
       byline: 
+cascade:
+  - type: "docs"
 ---
 
 ## Carvykti (Ciltacabtagene Autoleucel)
