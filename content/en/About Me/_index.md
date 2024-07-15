@@ -1,6 +1,7 @@
 ---
 title: Resume
 linkTitle: About Me
+url: "/about-me/"
 menu: {main: {weight: 20}}
 cascade:
   - type: "docs"
