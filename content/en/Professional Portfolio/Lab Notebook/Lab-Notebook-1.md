@@ -3,7 +3,7 @@ date: 2024-06-15
 title: Lab Notebook 1
 linkTitle: Lab Notebook 1
 description: >
-  In my Physics 2 course, I was presented with conducting certain experiments and documenting them, while also writing a full laboratory report. Check them out!
+  I wanted to test certain concepts in Physics 2, and I decided to write a lab report on these certain experiments. Check them out!
 author: Aarya Dani 
 resources:
   - src: 
