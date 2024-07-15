@@ -14,7 +14,7 @@ cascade:
   - type: "docs"
 ---
 
-# Laboratory Notebook
+# Laboratory Notebook 1
 
 **Laboratory Notebook Index**
 
