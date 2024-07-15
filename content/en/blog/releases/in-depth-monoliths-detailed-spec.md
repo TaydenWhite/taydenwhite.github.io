@@ -21,6 +21,4 @@ resources:
 </style>
 
 <iframe src="/pdf/162_Revision_Bosilovich_Dani_Nowatzki_2024.pdf" width="100%" height="600px">
-    This browser does not support PDFs. Please download the PDF to view it: 
-    <a href="/pdf/162_Revision_Bosilovich_Dani_Nowatzki_2024.pdf">Download PDF</a>.
 </iframe>

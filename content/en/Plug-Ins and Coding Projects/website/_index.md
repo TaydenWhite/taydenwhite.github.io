@@ -1,15 +1,12 @@
 ---
 title: Website Tutorial
-linkTitle: Website Tutorial
 description: >
-  Deploy a Docsy-themed Hugo website
+  This is a simple up-to-date tutorial on how to deploy a Docsy-themed Hugo website on GitHub Pages.
 date: 2017-01-05
 weight: 1
+cascade:
+  - type: "docs"
 ---
-
-## Building a Hugo Website
-
-<p style="font-size: 1.2em; margin-top: 1em;">This is a simple up-to-date tutorial on how to deploy a Docsy-themed Hugo website on GitHub Pages.</p>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rP2sL4pkhhM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
