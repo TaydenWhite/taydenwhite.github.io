@@ -3,6 +3,8 @@ title: Engineering Strengths
 description: What are some of the pros and cons of engineering?
 date: 2017-01-05
 weight: 3
+cascade:
+  - type: "docs"
 ---
 
 Engineering is not only one of the most sought-after and respected majors but also a field that demands a specific set of skills for success. In this context, I aim to highlight the essential skills that a chemical engineer must possess to excel in their career and illustrate how I have demonstrated these strengths in various aspects of my life.

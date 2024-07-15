@@ -3,6 +3,8 @@ title: Career Opportunities
 description: >
   What type of job should I expect to obtain once leaving college? 
 weight: 4
+cascade:
+  - type: "docs"
 ---
 
 While possessing the skills of a chemical engineer is undoubtedly valuable, it's equally essential to consider the array of opportunities that lie ahead for individuals in this field. To gain a broader perspective, I had the privilege of conducting an interview with Dave Whalen, a retired chemical engineer who held multiple significant positions at esteemed companies like General Electric and Johnson & Johnson. Through his insightful narrative, Mr. Whalen unveiled a remarkable 39-year career journey characterized by diverse roles and responsibilities. Throughout his illustrious career, Mr. Whalen ventured into an array of roles, ranging from being a lead technologist and consulting engagement lead at General Electric to assuming positions such as the director of the Global Supply Chain department and the head of Value Chain Analytics. His experiences underscored the versatility of a chemical engineer's career path. 

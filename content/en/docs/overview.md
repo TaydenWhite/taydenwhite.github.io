@@ -2,6 +2,8 @@
 title: Overview
 description: Here's where I tell my story about why I chose Pitt.
 weight: 1
+cascade:
+  - type: "docs"
 ---
 # Why Pitt?
 

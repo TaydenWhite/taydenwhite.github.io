@@ -2,6 +2,8 @@
 title: Origin Story
 description: My Vision for Becoming an Engineer
 weight: 2
+cascade:
+  - type: "docs"
 ---
 
 The speculum that held my eye open was almost the worst part of the surgery, second only to the laser that fried the first layer of skin cells on my eyes. The doctors followed a simple routine – 30 seconds with the laser, 2 minutes of rest, and an application of yellow drops that coated my eyes to numb the pain. The drops were almost as cold as the room, but as Bruno Mars’s “The Other Side” played in my left ear, I gathered some remaining willpower to persevere. The two-hour process was almost done, and I could hold on for another couple of minutes. With a pair of light-sensitive goggles strapped on my face, I walked out of Kremer Eye Center's chiseled tan building with the cross-linking procedure completed.

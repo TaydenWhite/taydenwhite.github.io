@@ -2,6 +2,8 @@
 title: Resume
 linkTitle: About Me
 menu: {main: {weight: 20}}
+cascade:
+  - type: "docs"
 ---
 
 <style>
