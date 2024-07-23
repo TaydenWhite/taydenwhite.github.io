@@ -8,4 +8,4 @@ no_list: true
 
 ---
 
-Here is some of the content that I learned at J&J.
+Whether it be the methods I used to delegate work, or the products that I was working on, I learned so much from my time at J&J. Here is some of the content that I learned at J&J.
