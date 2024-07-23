@@ -1,6 +1,7 @@
 ---
 title: Personal Projects
 linkTitle: Personal Projects
+url: "/personal-[projects]/"
 type: docs
 description: >
   Here are some of the projects that I have been working on.
