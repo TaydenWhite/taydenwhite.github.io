@@ -5,6 +5,7 @@ url: "/about-me/"
 menu: {main: {weight: 20}}
 cascade:
   - type: "docs"
+no_list: true
 ---
 
 <style>
