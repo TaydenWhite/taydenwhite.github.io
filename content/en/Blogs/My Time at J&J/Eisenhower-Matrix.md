@@ -2,14 +2,16 @@
 date: 2024-06-14
 title: Eisenhower Method
 linkTitle: Eisenhower Method
-author: Aarya Dani 
+description: >
+  An interesting method of designating work I learned on my first day on the job.
+author: Tayden White
 resources:
   - src: 
     title: 
     params:
       byline: 
 cascade:
-  - type: "docs"
+  - type: "blog"
 ---
 
 ## The Eisenhower Method

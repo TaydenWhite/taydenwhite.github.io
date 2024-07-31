@@ -1,10 +1,9 @@
 ---
-title: Lab Reports
-type: docs
-weight: 20
+title: Thoughts on Stuff
+description: >
+  A series of personal posts that can be about anything and everything.
+date: 2017-01-05
+weight: 1
 cascade:
   - type: "docs"
-no_list: true
 ---
-
-I conducted certain labs regarding principles from Physics 2. Here, I wrote a detailed lab report, showcasing multiple experiments, results, and analysis of said results. Check them out!
