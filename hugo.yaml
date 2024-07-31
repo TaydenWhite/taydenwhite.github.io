@@ -46,7 +46,7 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Home
+    title: Pizza
     params:
       description: A Docsy example site
       ui:

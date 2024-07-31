@@ -1,7 +1,7 @@
 ---
-title: My Time at J&J
+title: My Time at Johnson & Jonhson
 description: >
-  A series of blog posts related to my time interning at Johnson & Johnson!
+  A series of blog posts related to my time interning at J&J!
 date: 2017-01-05
 weight: 1
 cascade:
