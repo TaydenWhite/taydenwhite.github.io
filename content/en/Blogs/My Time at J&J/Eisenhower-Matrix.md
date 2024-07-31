@@ -12,6 +12,7 @@ resources:
       byline: 
 cascade:
   - type: "blog"
+weight: 5
 ---
 
 ## The Eisenhower Method
