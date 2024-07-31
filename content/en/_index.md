@@ -35,24 +35,21 @@ title: Aarya Dani
   </style>
 </head>
 
-{{< blocks/cover title="Aarya Dani" image_anchor="top" height="full" >}}
-<p class="lead mt-5">Hello, I am Aarya Dani. I attend the University of Pittsburgh, currently studying chemical engineering. In addition, I have a strong interest on bioengineering, aiming to enhance the affordability and accessibility of medical products. Over the years, I have cultivated expertise in data science and biotechnology. Currently at Johnson & Johnson, I leverage my skills to develop Hugo websites that effectively showcase diverse datasets. Drawing from my engineering background, I am passionate about bridging the gap between engineering principles, data science insights, user requirements, and cutting-edge technology.</p>
+{{< blocks/cover title="Tayden White" image_anchor="top" height="full" >}}
+<p class="lead mt-5">Hi! My name is Tayden White and this is my personal website. I built this site during an internship at Johnson & Johnson, where I learned a great deal, including subjects like data engineering, machine learning, and static websites. Currently, I am a rising sophomore at Purdue University, pursuing degrees in both Computer Science and Mathematical Economics. While coding has always been a passion of mine -- I have fond memories of building my first tic-tac-toe in python the summer before Freshman year -- , my interest in economics is relatively new.</p>
 
-<p>Here is some of my social media:</p>
+<p>You can find me here:</p>
 
 <div class="container">
   <div class="row">
     <div class="col-lg-8 mx-auto text-center">
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-linkedin" href="https://www.linkedin.com/in/aarya-dani-82413b287/" target="_blank">
+      <a class="btn btn-lg btn-social me-3 mb-4 btn-linkedin" href="https://www.linkedin.com/in/tayden-white/" target="_blank">
         <i class="fab fa-linkedin-in"></i>
       </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-instagram" href="https://www.instagram.com/_aaryadani/" target="_blank">
+      <a class="btn btn-lg btn-social me-3 mb-4 btn-instagram" href="https://www.instagram.com/tayden_white/" target="_blank">
         <i class="fab fa-instagram"></i>
       </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-youtube" href="https://www.youtube.com/@vrajvaishnavkendrasoutheas6099" target="_blank">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-github" href="https://github.com/AaryaDani" target="_blank">
+      <a class="btn btn-lg btn-social me-3 mb-4 btn-github" href="https://github.com/TaydenWhite/" target="_blank">
         <i class="fab fa-github"></i>
       </a>
     </div>
