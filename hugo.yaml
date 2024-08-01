@@ -50,8 +50,7 @@ languages:
     params:
       description: A Docsy example site
       ui:
-        showLightDarkModeMenu: true
-    
+        showLightDarkModeMenu: false
 markup:
   goldmark:
     parser:
