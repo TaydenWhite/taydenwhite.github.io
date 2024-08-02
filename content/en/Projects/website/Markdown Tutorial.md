@@ -1,8 +1,8 @@
 ---
-title: Markdown Tutorial
-linkTitle: Markdown Tutorial
+title: Simple Markdown
+linkTitle: Simple Markdown
 description: >
-  Hugo, Docsy, & GitHub will be the three fundamental building blocks for building and deploying your website to the web. Below is a brief overview of the functionality and strengths of each.
+  The majority of your content on your Hugo website will be written in markdown. Within these, you can choose to either code in html or markdown.
 date: 2017-01-05
 weight: 1
 cascade:
@@ -89,15 +89,6 @@ Unordered lists can be created using an asterisk or a hyphen:
 1. Numbered list
 2. Numbered list 
 
-## Blockquotes
-
-Blockquotes are created using the greater-than symbol (>). Here's an example:
-```
-> "Be yourself; everyone else is already taken." - Oscar Wilde
-```
-Output:
-> "Be yourself; everyone else is already taken." - Oscar Wilde
-
 ## Horizontal Rule
 
 You can create a horizontal rule using three hyphens, three asterisks, or three underscores:
@@ -107,3 +98,13 @@ You can create a horizontal rule using three hyphens, three asterisks, or three 
 Output:
 
 ---
+
+## Blockquotes
+
+Blockquotes are created using the greater-than symbol (>). Here's an example:
+```
+> "Be yourself; everyone else is already taken." - Oscar Wilde
+```
+Output:
+> "Be yourself; everyone else is already taken." - Oscar Wilde
+
