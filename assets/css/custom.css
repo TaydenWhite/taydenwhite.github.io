@@ -38,3 +38,13 @@
     color: #fff; /* White text */
   }
   
+  body {
+    --color-bg: var(--color-dark-bg);
+    --color-text: var(--color-dark-text);
+    --color-primary: var(--color-dark-primary);
+    --color-secondary: var(--color-dark-secondary);
+    --color-muted: var(--color-dark-muted);
+    --color-link: var(--color-dark-link);
+    --color-link-hover: var(--color-dark-link-hover);
+    --color-border: var(--color-dark-border);
+}

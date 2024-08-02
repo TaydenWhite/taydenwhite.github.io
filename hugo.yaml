@@ -48,7 +48,7 @@ languages:
     languageName: English
     title: Pizza
     params:
-      description: A Docsy example site
+      description: Tayden White's Website!
       ui:
         showLightDarkModeMenu: false
 markup:

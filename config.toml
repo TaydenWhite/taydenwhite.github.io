@@ -9,6 +9,10 @@ title = "My New Hugo Site"
 [params]
   # Add your theme-specific parameters here
 
+  [params.assets]
+  customCSS = ["css/custom.css"]
+
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
