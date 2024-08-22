@@ -50,7 +50,7 @@ languages:
     params:
       description: Tayden White's Website!
       ui:
-        showLightDarkModeMenu: false
+        showLightDarkModeMenu: true
 markup:
   goldmark:
     parser:
