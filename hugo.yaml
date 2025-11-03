@@ -46,7 +46,7 @@ imaging:
 languages:
   en:
     languageName: English
-    title: Pizza
+    title: Home
     params:
       description: Tayden White's Website!
       ui:
