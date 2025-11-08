@@ -1,0 +1,10 @@
+{{ $file := .Get "file" }}
+{{ $height := default "900" (.Get "height") }}
+{{ $pdf := .Page.Resources.GetMatch $file }}
+{{ if $pdf }}
+<iframe src="{{ $pdf.RelPermalink }}#view=FitH" width="100%" height="{{ $height }}" style="border: 1px solid #ddd;"></iframe>
+<p><a href="{{ $pdf.RelPermalink }}" target="_blank" rel="noopener">Open PDF in new tab</a></p>
+{{ else }}
+<p>PDF coming soon.</p>
+{{ end }}
+

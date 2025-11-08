@@ -36,18 +36,15 @@ title: Tayden White
 </head>
 
 {{< blocks/cover title="Tayden White" image_anchor="top" height="full" >}}
-<p class="lead mt-5">Hi! My name is Tayden White and this is my personal website. I built this site during an internship at Johnson & Johnson, where I learned a great deal, including subjects like data engineering, machine learning, and static websites. Currently, I am a rising sophomore at Purdue University, pursuing degrees in both Computer Science and Mathematical Economics. While coding has always been a passion of mine -- I have fond memories of building my first tic-tac-toe in python the summer before Freshman year -- , my interest in economics is relatively new.</p>
 
-<p>You can find me here:</p>
+<p class="lead mt-5">Hi, my name is Tayden White, I am a Junior at Purdue University pursuing dual-degrees in Computer Science and Economics. These subjects have been my forefront interests since I learned Python in 8th grade, while the stock market or some financial question would act as inspiration, coding was my medium for learning. In having opposite yet compatible proficiencies, I have gained an extremely well-rounded skillset, and taken a diverse range of opportunities. I initially built this website during an internship at Johnson & Johnson, where I learned a great deal about data engineering, machine learning, and building websites. In the projects tab you can find “Website Tutorials,” an initiative I led during my internship to educate my coworkers about the process of making your own personal site. 
+</p>
 
 <div class="container">
   <div class="row">
     <div class="col-lg-8 mx-auto text-center">
       <a class="btn btn-lg btn-social me-3 mb-4 btn-linkedin" href="https://www.linkedin.com/in/tayden-white/" target="_blank">
         <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a class="btn btn-lg btn-social me-3 mb-4 btn-instagram" href="https://www.instagram.com/tayden_white/" target="_blank">
-        <i class="fab fa-instagram"></i>
       </a>
       <a class="btn btn-lg btn-social me-3 mb-4 btn-github" href="https://github.com/TaydenWhite/" target="_blank">
         <i class="fab fa-github"></i>

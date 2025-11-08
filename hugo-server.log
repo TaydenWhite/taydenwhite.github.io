@@ -1,0 +1,357 @@
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Watching for changes in /Users/taydenwhite/taydenwhite.github.io/{assets,content,layouts,package.json,postcss.config.js,static}
+Watching for config changes in /Users/taydenwhite/taydenwhite.github.io/hugo.yaml, /Users/taydenwhite/taydenwhite.github.io/go.mod
+Start building sites … 
+hugo v0.150.0+extended+withdeploy darwin/arm64 BuildDate=2025-09-08T13:01:12Z VendorInfo=brew
+
+
+                  │ EN 
+──────────────────┼────
+ Pages            │ 52 
+ Paginator pages  │  0 
+ Non-page files   │  7 
+ Static files     │ 56 
+ Processed images │  2 
+ Aliases          │  0 
+ Cleaned          │  0 
+
+Built in 2203 ms
+Environment: "development"
+Serving pages from disk
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1) 
+Press Ctrl+C to stop
+
+Change detected, rebuilding site (#1).
+2025-11-08 17:08:01.839 -0500
+Source changed /about-me/resume/index.md
+Source changed /projects/fusion-of-permutation-defects/fusion-rules-in-n-4/index.md
+Source changed /projects/fusion-of-permutation-defects/permutation-defect-fusion-examples/index.md
+Source changed /projects/fusion-of-permutation-defects/report-1/index.md
+Source changed /projects/fusion-of-permutation-defects/report-2/index.md
+Source changed /projects/fusion-of-permutation-defects/report-3/index.md
+Template changed /_default/_markup/render-heading.html
+Template changed /shortcodes/embed-pdf.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 28 ms
+
+Change of config file detected, rebuilding site (#2).
+2025-11-08 17:10:42.839 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 908 ms
+
+Change detected, rebuilding site (#3).
+2025-11-08 17:11:17.339 -0500
+Source changed /blogs/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 9 ms
+
+Change detected, rebuilding site (#4).
+2025-11-08 17:15:01.840 -0500
+Asset changed /css/custom.css
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1 ms
+
+Change of config file detected, rebuilding site (#5).
+2025-11-08 17:15:32.340 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 930 ms
+
+Change of config file detected, rebuilding site (#6).
+2025-11-08 17:15:40.340 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 2664 ms
+
+Change of config file detected, rebuilding site (#7).
+2025-11-08 17:15:52.339 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 2618 ms
+
+Change of config file detected, rebuilding site (#8).
+2025-11-08 17:16:43.840 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 1062 ms
+
+Change of Static files detected, rebuilding site (#9).
+2025-11-08 17:21:41.341 -0500
+Syncing /images/home-background.jpg to /
+
+Change of Static files detected, rebuilding site (#10).
+2025-11-08 17:22:35.843 -0500
+
+Change detected, rebuilding site (#11).
+2025-11-08 17:23:05.841 -0500
+Source changed /home-background.jpg
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 39 ms
+
+Change detected, rebuilding site (#12).
+2025-11-08 17:23:13.842 -0500
+Source changed /featured-background.png
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 86 ms
+
+Change of Static files detected, rebuilding site (#13).
+2025-11-08 17:24:30.842 -0500
+
+Change of Static files detected, rebuilding site (#14).
+2025-11-08 17:24:33.342 -0500
+Syncing /images/home-background.jpg to /
+
+Change of config file detected, rebuilding site (#15).
+2025-11-08 17:24:53.841 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 968 ms
+
+Change detected, rebuilding site (#16).
+2025-11-08 17:25:35.342 -0500
+Source changed /home-background.jpg
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 390 ms
+
+Change detected, rebuilding site (#17).
+2025-11-08 17:26:25.842 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 27 ms
+
+Change detected, rebuilding site (#18).
+2025-11-08 17:26:30.842 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 12 ms
+
+Change detected, rebuilding site (#19).
+2025-11-08 17:48:41.830 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 19 ms
+
+Change of config file detected, rebuilding site (#20).
+2025-11-08 17:50:57.329 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 952 ms
+
+Change of config file detected, rebuilding site (#21).
+2025-11-08 17:51:15.329 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 885 ms
+
+Change detected, rebuilding site (#22).
+2025-11-08 17:52:20.829 -0500
+Source changed /projects/fusion-of-permutation-defects/report-1/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 13 ms
+
+Change detected, rebuilding site (#23).
+2025-11-08 17:52:30.329 -0500
+Source changed /projects/fusion-of-permutation-defects/report-2/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 12 ms
+
+Change detected, rebuilding site (#24).
+2025-11-08 17:52:37.329 -0500
+Source changed /projects/fusion-of-permutation-defects/report-3/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 12 ms
+
+Change detected, rebuilding site (#25).
+2025-11-08 17:52:42.328 -0500
+Source changed /projects/fusion-of-permutation-defects/fusion-rules-in-n-4/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 13 ms
+
+Change detected, rebuilding site (#26).
+2025-11-08 17:52:48.829 -0500
+Source changed /projects/fusion-of-permutation-defects/permutation-defect-fusion-examples/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 54 ms
+
+Change detected, rebuilding site (#27).
+2025-11-08 17:52:59.328 -0500
+Source changed /projects/fusion-of-permutation-defects/fusion-rules-in-n-4/index.md
+Source changed /projects/fusion-of-permutation-defects/permutation-defect-fusion-examples/index.md
+Source changed /projects/fusion-of-permutation-defects/report-1/index.md
+Source changed /projects/fusion-of-permutation-defects/report-2/index.md
+Source changed /projects/fusion-of-permutation-defects/report-3/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 9 ms
+
+Change detected, rebuilding site (#28).
+2025-11-08 17:54:18.328 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#29).
+2025-11-08 17:54:18.828 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#30).
+2025-11-08 17:54:51.829 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 16 ms
+
+Change detected, rebuilding site (#31).
+2025-11-08 17:55:04.331 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 29 ms
+
+Change detected, rebuilding site (#32).
+2025-11-08 17:55:37.329 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 19 ms
+
+Change detected, rebuilding site (#33).
+2025-11-08 17:56:38.828 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 26 ms
+
+Change detected, rebuilding site (#34).
+2025-11-08 17:57:58.328 -0500
+Source changed /_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 15 ms
+
+Change detected, rebuilding site (#35).
+2025-11-08 18:00:03.328 -0500
+Source changed /projects/fusion-of-permutation-defects/report-1/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#36).
+2025-11-08 18:00:47.829 -0500
+Source changed /projects/fusion-of-permutation-defects/report-2/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 27 ms
+
+Change detected, rebuilding site (#37).
+2025-11-08 18:01:34.851 -0500
+Source changed /projects/fusion-of-permutation-defects/report-3/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#38).
+2025-11-08 18:01:58.355 -0500
+Source changed /projects/fusion-of-permutation-defects/report-3/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 20 ms
+
+Change detected, rebuilding site (#39).
+2025-11-08 18:03:20.858 -0500
+Source changed /projects/fusion-of-permutation-defects/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 26 ms
+
+Change detected, rebuilding site (#40).
+2025-11-08 18:03:41.361 -0500
+Source changed /projects/fusion-of-permutation-defects/permutation-defect-fusion-examples/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 36 ms
+
+Change detected, rebuilding site (#41).
+2025-11-08 18:03:43.357 -0500
+Source changed /projects/fusion-of-permutation-defects/permutation-defect-fusion-examples/index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 18 ms
+
+Change detected, rebuilding site (#42).
+2025-11-08 18:05:08.379 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 997 ms
+
+Change detected, rebuilding site (#43).
+2025-11-08 18:05:17.877 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 928 ms
+
+Change detected, rebuilding site (#44).
+2025-11-08 18:07:30.359 -0500
+Asset changed /an-algorithm-for-fusing-permutation-defects-in-multi-layer-anyon-models.mp4
+Source changed /projects/fusion-of-permutation-defects/an-algorithm-for-fusing-permutation-defects.mp4
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 78 ms
+adding created directory to watchlist /Users/taydenwhite/taydenwhite.github.io/content/en/Projects/J&J Internship Wrap-up
+
+Change detected, rebuilding site (#45).
+2025-11-08 18:07:37.859 -0500
+Asset changed /tayden-white---internship-wrap-up.mp4
+Source changed /projects/j&j-internship-wrap-up/tayden-white-internship-wrap-up.mp4
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 68 ms
+
+Change detected, rebuilding site (#46).
+2025-11-08 18:07:54.859 -0500
+Source changed /projects/fusion-of-permutation-defects/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 62 ms
+
+Change detected, rebuilding site (#47).
+2025-11-08 18:08:07.859 -0500
+Source changed /projects/j&j-internship-wrap-up/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 63 ms
+
+Change detected, rebuilding site (#48).
+2025-11-08 18:08:35.360 -0500
+Source changed /projects/fusion-of-permutation-defects/_index.md
+Source changed /projects/j&j-internship-wrap-up/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 108 ms
+
+Change of config file detected, rebuilding site (#49).
+2025-11-08 18:10:03.360 -0500
+WARN  skipping template file "/Users/taydenwhite/Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/google/docsy@v0.10.0/layouts/_default/_markup/td-render-heading.html": unrecognized render hook template
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Rebuilt in 1003 ms
+
+Change detected, rebuilding site (#50).
+2025-11-08 18:10:38.360 -0500
+Template added /shortcodes/embed-video.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 85 ms
+
+Change detected, rebuilding site (#51).
+2025-11-08 18:10:47.859 -0500
+Source changed /projects/fusion-of-permutation-defects/_index.md
+ERROR Rebuild failed: process: "/Users/taydenwhite/taydenwhite.github.io/content/en/Projects/Fusion of Permutation Defects/_index.md:13:1": failed to extract shortcode: template for shortcode "embed-video" not found
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1 ms
+
+Change detected, rebuilding site (#52).
+2025-11-08 18:10:56.860 -0500
+Source changed /projects/fusion-of-permutation-defects/_index.md
+Source changed /projects/j&j-internship-wrap-up/_index.md
+ERROR Rebuild failed: process: "/Users/taydenwhite/taydenwhite.github.io/content/en/Projects/J&J Internship Wrap-up/_index.md:9:1": failed to extract shortcode: template for shortcode "embed-video" not found
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 2 ms
+
+Change detected, rebuilding site (#53).
+2025-11-08 18:11:12.360 -0500
+Source changed /projects/fusion-of-permutation-defects/_index.md
+Source changed /projects/j&j-internship-wrap-up/_index.md
+Template added /shortcodes/embed-video.html
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 25 ms
+
+Change detected, rebuilding site (#54).
+2025-11-08 18:11:29.859 -0500
+Source changed /projects/fusion-of-permutation-defects/_index.md
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Total in 1 ms

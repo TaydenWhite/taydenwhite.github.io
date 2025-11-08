@@ -1,13 +1,6 @@
 ---
-title: Permutation Defect Fusion Examples (PDF)
-weight: 10
+title: Fusion Example
+weight: 50
 ---
-{{ $pdf := .Resources.GetMatch "Permutation Defect Fusion Examples.pdf" }}
-{{ if $pdf }}
-<iframe src="{{ $pdf.RelPermalink }}#view=FitH" width="100%" height="900" style="border: 1px solid #ddd;"></iframe>
-
-<p><a href="{{ $pdf.RelPermalink }}" target="_blank">Open PDF in new tab</a></p>
-{{ else }}
-<p>PDF coming soon.</p>
-{{ end }}
+{{< embed-pdf file="Permutation Defect Fusion Examples.pdf" >}}
 
