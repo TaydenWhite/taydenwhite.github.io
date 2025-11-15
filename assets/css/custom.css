@@ -59,5 +59,46 @@
 }
 
 .td-home .td-main {
-  background: transparent;
+  background-color: #ffffff;
+}
+
+.home-section {
+  padding: 4rem 0;
+}
+
+.home-section--white {
+  background: url("/images/section-white.png") center/cover no-repeat;
+  color: #111111;
+}
+
+.home-section--blue {
+  background: url("/images/section-blue.png") center/cover no-repeat;
+  color: #f4f6fb;
+}
+
+.home-section__image-placeholder {
+  width: 100%;
+  min-height: 220px;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.home-section--white .home-section__image-placeholder {
+  border-color: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.home-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0;
 }

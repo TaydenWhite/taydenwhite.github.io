@@ -144,6 +144,9 @@ params:
     sidebar_menu_compact: false
     # Set to true to hide the sidebar search box (the top nav search box will still be displayed if search is enabled)
     sidebar_search_disable: false
+    # Fold subpages in the sidebar menu by default
+    sidebar_menu_foldable: true
+    sidebar_cache_limit: 10
     
 
     # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.

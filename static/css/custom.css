@@ -1,18 +1,104 @@
-/* Example CSS using Helvetica or Arial font */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Apply Helvetica Neue or fallback to Helvetica, Arial */
-  font-size: 16px; /* Adjust base font size */
+.btn-lg {
+    font-size: 20px; /* Increased font size */
+    padding: 0;
+  }
+  
+  .btn-social {
+    width: 60px; /* Increased button size */
+    height: 60px; /* Increased button size */
+    font-size: 28px; /* Increased icon size */
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-social:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn-linkedin {
+    background-color: #0077b5; /* LinkedIn color */
+    color: #fff; /* White text */
+  }
+  
+  .btn-instagram {
+    background-color: #e4405f; /* Instagram color */
+    color: #fff; /* White text */
+  }
+  
+  .btn-youtube {
+    background-color: #ff0000; /* YouTube color */
+    color: #fff; /* White text */
+  }
+  
+  .btn-github {
+    background-color: #333; /* GitHub color */
+    color: #fff; /* White text */
+  }
+  
+  body {
+    --color-bg: var(--color-dark-bg);
+    --color-text: var(--color-dark-text);
+    --color-primary: var(--color-dark-primary);
+    --color-secondary: var(--color-dark-secondary);
+    --color-muted: var(--color-dark-muted);
+    --color-link: var(--color-dark-link);
+    --color-link-hover: var(--color-dark-link-hover);
+    --color-border: var(--color-dark-border);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Apply Helvetica Neue or fallback to Helvetica, Arial */
-  font-weight: bold; /* Adjust font weight if necessary */
-}
-
-.gif-background {
-  background: url('https://file.notion.so/f/f/66b2b53d-b133-4203-afac-6437a8b63c70/170fd7f4-0be0-4789-b507-e95961cd12e5/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7957675f6f55416c6a30635238673d3d2d3636363139353136382e313537303.gif?id=f30f2290-d79f-451b-8ffe-7e11811f07f4&table=block&spaceId=66b2b53d-b133-4203-afac-6437a8b63c70&expirationTimestamp=1719864000000&signature=QC4F_WugKdS2bPxSbEXulgQ8ajRQk9TtCUFylNShHIo') no-repeat center center;
+.td-home {
+  background-color: #000;
+  background-image: url("/images/home-background.jpg");
   background-size: cover;
-  color: white; /* Adjust text color for readability */
-  padding: 100px 20px; /* Adjust padding for desired height */
-  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.td-home .td-main {
+  background-color: #ffffff;
+}
+
+.home-section {
+  padding: 4rem 0;
+}
+
+.home-section--white {
+  background: url("/images/section-white.png") center/cover no-repeat;
+  color: #111111;
+}
+
+.home-section--blue {
+  background: url("/images/section-blue.png") center/cover no-repeat;
+  color: #f4f6fb;
+}
+
+.home-section__image-placeholder {
+  width: 100%;
+  min-height: 220px;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.home-section--white .home-section__image-placeholder {
+  border-color: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.03);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.home-section p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0;
 }
