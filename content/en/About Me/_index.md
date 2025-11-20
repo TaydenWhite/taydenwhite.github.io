@@ -139,7 +139,7 @@ no_list: true
     <div class="contact-info">
       <h2>Tayden White</h2>
       <p style="font-size: 0.8rem; margin-bottom: 1.5rem;">
-        <a href="mailto:tayden.white@gmail.com">tayden.white@gmail.com</a> | 
+        <a href="mailto:tayden.white@gmail.com">tayden.white@gmail.com</a> | docu
         908-369-1626 | 
         <a href="https://linkedin.com/in/tayden-white/" target="_blank">linkedin.com/in/tayden-white/</a>
       </p>
