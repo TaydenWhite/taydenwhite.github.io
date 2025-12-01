@@ -12,3 +12,8 @@ Expect future sections covering favorite algorithms, practice drills, and compet
 
 For now, this filler keeps the structure aligned with other project collections while the full story takes shape.
 
+## Live Solve Stream
+
+Below is a real-time stream of Rubik's cube solves:
+
+{{< rubiks-listener apiUrl="https://rubiks-cube-listener.onrender.com" >}}

@@ -1,0 +1,8 @@
+{{ $apiUrl := .Get "apiUrl" | default "http://localhost:3001" }}
+<div id="rubiks-listener-root"></div>
+<link rel="stylesheet" href="/js/rubiks-listener.css">
+<script>
+  window.RUBIKS_API_URL = "{{ $apiUrl }}";
+</script>
+<script type="module" src="/js/rubiks-listener.js"></script>
+
