@@ -1,0 +1,12 @@
+# Link checker config (https://github.com/wjdp/htmltest), run in CI after `hugo` builds ./public.
+DirectoryPath: public
+CheckExternal: false
+CheckInternalHash: true
+IgnoreDirectoryMissingTrailingSlash: true
+IgnoreAltEmpty: true
+# Alias pages generated for old URLs redirect to absolute production URLs.
+IgnoreURLs:
+  - "^https://taydenwhite\\.github\\.io/"
+  # PDF viewer hints aren't page anchors. The PDFs themselves are still checked
+  # through the plain "Open PDF" / "Download PDF" links on the same pages.
+  - "\\.pdf#view=FitH$"
