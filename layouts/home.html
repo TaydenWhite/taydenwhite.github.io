@@ -16,8 +16,10 @@
       <div class="btn-row">
         <a class="btn btn--primary" href="{{ "resume/" | relURL }}">{{ partial "icon.html" "file-text" }}View resume</a>
         <a class="btn btn--secondary" href="mailto:{{ $p.email }}">{{ partial "icon.html" "mail" }}Email me</a>
-        <a class="btn btn--ghost" href="{{ $p.github }}" rel="noopener" aria-label="GitHub profile">{{ partial "icon.html" "github" }}</a>
-        <a class="btn btn--ghost" href="{{ $p.linkedin }}" rel="noopener" aria-label="LinkedIn profile">{{ partial "icon.html" "linkedin" }}</a>
+        <span class="btn-group">
+          <a class="btn btn--ghost" href="{{ $p.github }}" rel="noopener" aria-label="GitHub profile">{{ partial "icon.html" "github" }}</a>
+          <a class="btn btn--ghost" href="{{ $p.linkedin }}" rel="noopener" aria-label="LinkedIn profile">{{ partial "icon.html" "linkedin" }}</a>
+        </span>
       </div>
     </div>
     {{- with resources.Get "images/headshot.jpg" }}

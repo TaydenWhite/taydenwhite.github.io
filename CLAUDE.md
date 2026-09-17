@@ -30,7 +30,7 @@ Key facts (July 2026 resume):
 - **CSS:** `assets/css/main.css` (design tokens + components) and `assets/css/syntax.css` (generated Chroma light/dark styles), concatenated, minified, and fingerprinted in `_partials/head.html`. Fonts are Inter and JetBrains Mono from Google Fonts.
 - **JS:** `assets/js/main.js` (theme toggle, mobile nav, card filters, YouTube click-to-load) and `assets/js/pong.js`, bundled with `js.Build`.
 - **Deploy:** `.github/workflows/hugo.yaml` builds, runs **htmltest** (`.htmltest.yml`, internal links only), and deploys to GitHub Pages on push to `main`. Pull requests build and check without deploying.
-- **Git:** overhaul work happens on branch `site-overhaul`. Nothing goes to `main` without Tayden's OK, because pushing to `main` deploys.
+- **Git:** pushing to `main` deploys the live site, so do larger changes on a branch and merge only with Tayden's OK. The `site-overhaul` redesign was merged on 2026-09-17.
 
 ```bash
 hugo server                      # http://localhost:1313
@@ -68,10 +68,9 @@ hugo --gc --minify && htmltest   # production build + link check (go install git
 
 ## Known gaps (waiting on Tayden)
 
-- New professional headshot → replace `assets/images/headshot.jpg` (currently a crop of a career-fair photo).
-- Future of AI paper/poster PDF → embed on `research/future-of-ai-at-purdue/`.
-- YouTube links for `research/permutation-defects/research-expo-video.mp4` (91 MB) and `experience/internship-wrap-up.mp4` (78 MB) → swap to `youtube` embeds (`video.youtube:` in `data/experience.yaml`), delete the MP4s, then purge them from git history (force-push needs explicit confirmation).
-- GoatCounter site code → `params.goatcounter` in `hugo.yaml`.
+- **Deferred; remind Tayden every session until done:** YouTube links for `research/permutation-defects/research-expo-video.mp4` (91 MB) and `experience/internship-wrap-up.mp4` (78 MB) → swap to `youtube` embeds (`video.youtube:` in `data/experience.yaml`), delete the MP4s, then purge them from git history (force-push needs explicit confirmation).
+- **Deferred; remind Tayden every session until done:** GoatCounter site code → `params.goatcounter` in `hugo.yaml`.
+- Future of AI paper/poster → embed on `research/future-of-ai-at-purdue/`. `Agent Context/` holds `Research Poster Bigger Font.key` and `White, T. Evidence-Based Argumentative Essay (1).pdf`; confirm with Tayden before publishing either.
 - Julia fusion-rings contribution link (no commits by TaydenWhite found in `anyonwiki/FusionRings`).
 - GitHub profile has no pinned repos.
 
