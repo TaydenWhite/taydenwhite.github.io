@@ -1,0 +1,7 @@
+{{- /* Click-to-load YouTube embed. Context: dict "id", "title". */ -}}
+<div class="media">
+  <button class="yt" type="button" data-youtube="{{ .id }}" data-title="{{ .title }}" aria-label="Play video: {{ .title }}">
+    <img src="https://i.ytimg.com/vi/{{ .id }}/hqdefault.jpg" alt="" loading="lazy" decoding="async" width="480" height="360">
+    <span class="yt__play">{{ partial "icon.html" "play" }}</span>
+  </button>
+</div>

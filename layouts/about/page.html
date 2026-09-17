@@ -1,0 +1,64 @@
+{{ define "main" }}
+{{- $p := site.Data.profile }}
+<header class="container page-head">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+</header>
+
+<div class="container split">
+  <div class="prose">
+    {{ .Content }}
+  </div>
+
+  <aside class="sticky">
+    {{- with resources.Get "images/headshot.jpg" }}
+    {{ partial "image.html" (dict "img" . "alt" (printf "Photo of %s" $p.name) "class" "about-photo" "widths" (slice 320 600) "sizes" "320px" "eager" true) }}
+    {{- end }}
+    <div class="panel">
+      <h2>Education</h2>
+      {{ partial "education.html" . }}
+    </div>
+    <div class="panel">
+      <h2>Get in touch</h2>
+      <p class="panel__note">{{ $p.availability }}.</p>
+      {{ partial "socials.html" . }}
+    </div>
+  </aside>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I work with</h2>
+      </div>
+    </div>
+    {{ partial "skills.html" (dict "class" "skills--cols") }}
+  </div>
+</section>
+
+{{- with .Params.beyond }}
+<section class="section section--tint">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Beyond code</p>
+        <h2>A few other things I enjoy</h2>
+      </div>
+    </div>
+    <div class="beyond">
+      {{- range . }}
+      {{- $href := .url }}
+      {{- with .page }}{{ with site.GetPage . }}{{ $href = .RelPermalink }}{{ else }}{{ errorf "about: page %q not found" . }}{{ end }}{{ end }}
+      <article class="card">
+        <p class="card__kicker">{{ .kicker }}</p>
+        <h3 class="card__title"><a href="{{ $href }}"{{ if .url }} rel="noopener"{{ end }}>{{ .title }}</a></h3>
+        <p class="card__summary">{{ .text }}</p>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+{{ end }}

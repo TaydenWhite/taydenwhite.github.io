@@ -1,0 +1,26 @@
+{{- /* Details sidebar for write-ups. Context: page. */ -}}
+<aside class="sticky">
+  <div class="panel">
+    <h2 class="visually-hidden">Details</h2>
+    <dl class="meta">
+      {{- with .Params.role }}<div><dt>Role</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{- with .Params.org }}
+      <div><dt>Organization</dt><dd>{{ with $.Params.orgUrl }}<a href="{{ . }}" rel="noopener">{{ $.Params.org }}</a>{{ else }}{{ . }}{{ end }}</dd></div>
+      {{- end }}
+      {{- with .Params.dates }}<div><dt>When</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{- with .Params.team }}<div><dt>Team</dt><dd>{{ . }}</dd></div>{{ end }}
+      {{- with .Params.stack }}<div><dt>Stack</dt><dd>{{ partial "chips.html" . }}</dd></div>{{ end }}
+      {{- with .GetTerms "tags" }}
+      <div><dt>Topics</dt><dd><ul class="chips">{{ range . }}<li><a class="chip chip--tag" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}</ul></dd></div>
+      {{- end }}
+      {{- with .Params.links }}
+      <div><dt>Links</dt><dd><ul>
+        {{- range . }}<li><a href="{{ .url }}" rel="noopener">{{ .label }} {{ partial "icon.html" "external" }}</a></li>{{ end }}
+      </ul></dd></div>
+      {{- end }}
+    </dl>
+  </div>
+  {{- with .Params.note }}
+  <div class="panel"><p class="panel__note">{{ . }}</p></div>
+  {{- end }}
+</aside>

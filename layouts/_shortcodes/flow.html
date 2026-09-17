@@ -1,0 +1,7 @@
+{{- /* Left-to-right process diagram (stacks vertically on small screens).
+       Usage: {{< flow "Step one" "Step two" "Step three" >}} */ -}}
+<ol class="flow" aria-label="Process diagram">
+  {{- range .Params }}
+  <li class="flow__step">{{ . | markdownify }}</li>
+  {{- end }}
+</ol>

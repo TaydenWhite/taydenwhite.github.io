@@ -1,0 +1,10 @@
+{{- /* Embed a video stored in the page bundle.
+       Usage: {{< embed-video file="clip.mp4" >}} */ -}}
+{{- $file := .Get "file" -}}
+{{- with .Page.Resources.GetMatch $file }}
+<div class="media">
+  <video controls preload="metadata" src="{{ .RelPermalink }}"></video>
+</div>
+{{- else }}
+{{- errorf "embed-video: %q not found in %s" $file .Page.Path }}
+{{- end }}

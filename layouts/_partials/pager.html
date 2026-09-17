@@ -1,0 +1,16 @@
+{{- /* Previous/next links among sibling pages, ordered by weight. Context: page. */ -}}
+{{- $siblings := .Parent.RegularPages.ByWeight -}}
+{{- $prev := false -}}
+{{- $next := false -}}
+{{- range $i, $p := $siblings -}}
+  {{- if eq $p.RelPermalink $.RelPermalink -}}
+    {{- if gt $i 0 }}{{ $prev = index $siblings (sub $i 1) }}{{ end -}}
+    {{- if lt (add $i 1) (len $siblings) }}{{ $next = index $siblings (add $i 1) }}{{ end -}}
+  {{- end -}}
+{{- end -}}
+{{- if or $prev $next }}
+<nav class="pager" aria-label="More in {{ .Parent.Title }}">
+  {{- with $prev }}<a class="prev" href="{{ .RelPermalink }}"><small>Previous</small>{{ .LinkTitle }}</a>{{ end }}
+  {{- with $next }}<a class="next" href="{{ .RelPermalink }}"><small>Next</small>{{ .LinkTitle }}</a>{{ end }}
+</nav>
+{{- end }}

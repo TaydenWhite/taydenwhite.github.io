@@ -1,0 +1,31 @@
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    {{- $logo := resources.Get "icons/logo.svg" }}
+    <a class="brand" href="{{ "/" | relURL }}">
+      <img src="{{ $logo.RelPermalink }}" alt="" width="28" height="28">
+      <span>{{ site.Data.profile.name }}</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <ul class="nav__list" id="nav-list">
+        {{- range site.Menus.main }}
+        {{- $active := or (eq $.RelPermalink .URL) (and (not $.FirstSection.IsHome) (eq $.FirstSection.RelPermalink .URL)) }}
+        <li>
+          {{- if .Params.button }}
+          <a class="btn btn--primary btn--sm" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ partial "icon.html" "file-text" }}{{ .Name }}</a>
+          {{- else }}
+          <a class="nav__link" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+          {{- end }}
+        </li>
+        {{- end }}
+      </ul>
+      <button class="icon-btn theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme">
+        <span class="icon-sun">{{ partial "icon.html" "sun" }}</span>
+        <span class="icon-moon">{{ partial "icon.html" "moon" }}</span>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" data-nav-toggle aria-controls="nav-list" aria-expanded="false" aria-label="Menu">
+        {{ partial "icon.html" "menu" }}
+      </button>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,37 @@
+{{- /* One experience entry. Context: dict "item" (from data/experience.yaml),
+       "compact" (bool, hides bullets), "page" (page holding video resources). */ -}}
+{{- $i := .item -}}
+{{- $compact := .compact -}}
+{{- $page := .page -}}
+<li class="timeline__item xp{{ if $compact }} xp--compact{{ end }}">
+  <div class="xp__head">
+    <h3 class="xp__role">{{ $i.role }}</h3>
+    <span class="xp__dates">{{ $i.dates }}</span>
+  </div>
+  <p class="xp__org">
+    {{- with $i.orgUrl }}<a href="{{ . }}" rel="noopener">{{ $i.org }}</a>{{ else }}{{ $i.org }}{{ end }}
+    {{- with $i.location }} · {{ . }}{{ end -}}
+  </p>
+  {{- if not $compact }}
+  <ul class="xp__bullets">
+    {{- range $i.bullets }}<li>{{ . }}</li>{{ end }}
+  </ul>
+  {{- end }}
+  <div class="xp__foot">
+    {{ partial "chips.html" $i.tech }}
+    {{- with $i.page }}{{ with site.GetPage . }}
+    <a class="link-arrow" href="{{ .RelPermalink }}">Read more<span class="visually-hidden"> about {{ .Title }}</span> {{ partial "icon.html" "arrow-right" }}</a>
+    {{- end }}{{ end }}
+  </div>
+  {{- if and (not $compact) $i.video $page }}
+  {{- $v := $i.video }}
+  <details class="xp-video">
+    <summary>{{ $v.label }}</summary>
+    {{- if $v.youtube }}
+    {{ partial "youtube.html" (dict "id" $v.youtube "title" $v.label) }}
+    {{- else }}{{ with $page.Resources.GetMatch $v.file }}
+    <div class="media"><video controls preload="none" src="{{ .RelPermalink }}"></video></div>
+    {{- else }}{{ errorf "xp-item: video %q not found in %s" $v.file $page.Path }}{{ end }}{{ end }}
+  </details>
+  {{- end }}
+</li>

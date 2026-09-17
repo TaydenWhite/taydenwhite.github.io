@@ -1,0 +1,14 @@
+{{- /* Embed a PDF stored in the page bundle.
+       Usage: {{< embed-pdf file="report.pdf" title="Report title" >}} */ -}}
+{{- $file := .Get "file" -}}
+{{- $title := .Get "title" | default .Page.Title -}}
+{{- with .Page.Resources.GetMatch $file }}
+<div class="pdf">
+  <iframe class="pdf__frame" src="{{ .RelPermalink }}#view=FitH" title="{{ $title }} (PDF)" loading="lazy"></iframe>
+  <div class="btn-row pdf__actions">
+    <a class="btn btn--secondary btn--sm" href="{{ .RelPermalink }}" target="_blank" rel="noopener">{{ partial "icon.html" "external" }}Open PDF in a new tab</a>
+  </div>
+</div>
+{{- else }}
+{{- errorf "embed-pdf: %q not found in %s" $file .Page.Path }}
+{{- end }}

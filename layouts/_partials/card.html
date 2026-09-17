@@ -1,0 +1,13 @@
+{{- /* Summary card for a project, research page, or section child. Context: page. */ -}}
+{{- $kicker := .Params.kicker | default .Params.org -}}
+<article class="card" data-tags="{{ delimit (.Params.tags | default slice) "|" }}">
+  {{- with $kicker }}<p class="card__kicker">{{ . }}</p>{{ end }}
+  <h3 class="card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  <p class="card__summary">{{ .Params.summary | default .Description }}</p>
+  {{- with .Params.metrics }}{{ with index . 0 }}
+  <p class="card__metric"><strong>{{ .value }}</strong><span>{{ .label }}</span></p>
+  {{- end }}{{ end }}
+  {{- with .Params.stack }}
+  <div class="card__foot">{{ partial "chips.html" (first 4 .) }}</div>
+  {{- end }}
+</article>

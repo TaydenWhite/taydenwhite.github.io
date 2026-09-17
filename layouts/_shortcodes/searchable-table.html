@@ -1,0 +1,44 @@
+{{- /* Filterable, paginated table loaded from a published CSV (e.g. Google Sheets).
+       Usage: {{< searchable-table id="books" csvFile="https://…/pub?output=csv" >}} */ -}}
+{{- $id := .Get "id" -}}
+{{- $csv := .Get "csvFile" -}}
+{{- $download := .Get "downloadLink" | default $csv -}}
+{{- if not (.Page.Store.Get "tabulator-loaded") }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.3/dist/css/tabulator_simple.min.css" integrity="sha384-Ak1dhzcMsHBnqEVmmezCrgCT7bkW/G6BZmJU1454telAMOOHTDBZEOcsSNwV1KdN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js" integrity="sha384-D/t0ZMqQW31H3az8ktEiNb39wyKnS82iFY52QPACM+IjKW3jDUhyIgh2PApRqJZs" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/tabulator-tables@5.5.3/dist/js/tabulator.min.js" integrity="sha384-pQOOvKweB4c+N+RqtjN3FukRI8FVNmmWolHLJg9AgI/gKeGIMRkdymoMgWNCb2rD" crossorigin="anonymous" defer></script>
+{{- .Page.Store.Set "tabulator-loaded" true }}
+{{- end }}
+<div class="data-table">
+  <div class="btn-row">
+    <a class="btn btn--secondary btn--sm" href="{{ $download }}" rel="noopener">{{ partial "icon.html" "download" }}Download CSV</a>
+  </div>
+  <div id="{{ $id }}"><p class="data-table__status">Loading list…</p></div>
+</div>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    var el = document.getElementById({{ $id }});
+    fetch({{ $csv }})
+      .then(function (response) {
+        if (!response.ok) throw new Error("HTTP " + response.status);
+        return response.text();
+      })
+      .then(function (text) {
+        var parsed = Papa.parse(text, { header: true, dynamicTyping: true, skipEmptyLines: true });
+        el.innerHTML = "";
+        new Tabulator(el, {
+          data: parsed.data,
+          autoColumns: true,
+          layout: "fitColumns",
+          responsiveLayout: "collapse",
+          pagination: true,
+          paginationSize: 15,
+          paginationCounter: "rows",
+          columnDefaults: { headerFilter: "input", headerFilterPlaceholder: "Filter…", formatter: "textarea", minWidth: 120 }
+        });
+      })
+      .catch(function () {
+        el.innerHTML = '<p class="data-table__status">This list could not be loaded right now. Use the Download CSV button to view it.</p>';
+      });
+  });
+</script>

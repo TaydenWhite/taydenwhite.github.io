@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{- $p := site.Data.profile }}
+<header class="container page-head">
+  <h1>{{ .Title }}</h1>
+  <p class="lead">Updated {{ $p.resumeUpdated }}. {{ $p.availability }}.</p>
+</header>
+<div class="container">
+  <div class="btn-row">
+    <a class="btn btn--primary" href="{{ "resume.pdf" | relURL }}" download="Tayden-White-Resume.pdf">{{ partial "icon.html" "download" }}Download PDF</a>
+    <a class="btn btn--secondary" href="{{ "resume.pdf" | relURL }}" target="_blank" rel="noopener">{{ partial "icon.html" "external" }}Open in new tab</a>
+  </div>
+  <div class="pdf">
+    <iframe class="pdf__frame" src="{{ "resume.pdf" | relURL }}#view=FitH" title="{{ $p.name }} resume (PDF)"></iframe>
+  </div>
+</div>
+{{ end }}

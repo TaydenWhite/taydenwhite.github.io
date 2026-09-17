@@ -1,0 +1,10 @@
+{{- /* Playable Pong game. Usage: {{< pong >}} */ -}}
+<div class="pong">
+  <canvas id="pong-canvas" width="800" height="400" role="img" aria-label="Pong game. Move your paddle with the mouse or your finger."></canvas>
+  <div class="pong__bar">
+    <span>Your paddle is on the left. Move it with your mouse or finger.</span>
+    <button class="btn btn--secondary btn--sm" id="pong-pause" type="button">Play</button>
+  </div>
+</div>
+{{- $js := resources.Get "js/pong.js" | js.Build (dict "minify" true) | fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>

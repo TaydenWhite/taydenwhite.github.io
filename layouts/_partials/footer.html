@@ -1,0 +1,7 @@
+{{- $profile := site.Data.profile }}
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <p>&copy; {{ now.Year }} {{ $profile.name }} · Built with <a href="https://gohugo.io/">Hugo</a> · <a href="{{ site.Params.repo }}">Source</a></p>
+    {{ partial "socials.html" . }}
+  </div>
+</footer>

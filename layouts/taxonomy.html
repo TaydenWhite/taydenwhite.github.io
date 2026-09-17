@@ -1,0 +1,13 @@
+{{ define "main" }}
+<header class="container page-head">
+  <h1>Topics</h1>
+  <p class="lead">Browse projects and research by topic.</p>
+</header>
+<div class="container">
+  <ul class="chips">
+    {{- range .Pages.ByTitle }}
+    <li><a class="chip chip--tag" href="{{ .RelPermalink }}">{{ .LinkTitle }} ({{ len .Pages }})</a></li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

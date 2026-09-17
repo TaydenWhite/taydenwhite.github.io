@@ -1,0 +1,5 @@
+{{- /* Click-to-load YouTube embed (replaces Hugo's built-in shortcode).
+       Usage: {{< youtube id="VIDEO_ID" title="Video title" >}} or {{< youtube VIDEO_ID >}} */ -}}
+{{- $id := .Get "id" | default (.Get 0) -}}
+{{- if not $id }}{{ errorf "youtube: missing video id in %s" .Page.Path }}{{ end -}}
+{{ partial "youtube.html" (dict "id" $id "title" (.Get "title" | default .Page.Title)) }}

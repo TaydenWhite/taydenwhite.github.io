@@ -1,0 +1,56 @@
+{{- $profile := site.Data.profile -}}
+{{- $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) -}}
+{{- $description := .Params.summary | default .Description | default site.Params.description | plainify | strings.TrimSpace -}}
+{{- $image := absURL site.Params.shareImage -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="author" content="{{ $profile.name }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- if .Draft }}<meta name="robots" content="noindex">{{ end }}
+
+<meta property="og:type" content="{{ cond .IsHome "website" "article" }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ cond .IsHome (printf "%s: %s" $profile.name $profile.headline) .Title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $image }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ $profile.name }}: {{ $profile.headline }}">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png">
+<meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f130e" media="(prefers-color-scheme: dark)">
+
+{{- /* Apply a saved theme before first paint to avoid a flash. */}}
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+{{- $css := slice (resources.Get "css/main.css") (resources.Get "css/syntax.css") | resources.Concat "css/site.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}">
+
+{{- if .IsHome }}
+{{- $person := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" $profile.name
+  "url" site.BaseURL
+  "email" (printf "mailto:%s" $profile.email)
+  "description" site.Params.description
+  "alumniOf" (dict "@type" "CollegeOrUniversity" "name" $profile.education.school)
+  "sameAs" (slice $profile.github $profile.linkedin)
+}}
+{{- with resources.Get "images/headshot.jpg" }}{{ $person = merge $person (dict "image" .Permalink) }}{{ end }}
+<script type="application/ld+json">{{ $person | jsonify | safeJS }}</script>
+{{- end }}
+
+{{- with site.Params.goatcounter }}{{ if hugo.IsProduction }}
+<script data-goatcounter="https://{{ . }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+{{- end }}{{ end }}

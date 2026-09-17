@@ -1,0 +1,38 @@
+# Site-wide facts about Tayden. Source of truth: the latest resume.
+# Keep every fact here in sync with the resume PDF in static/resume.pdf.
+
+name: Tayden White
+headline: I work where software engineering, machine learning, and research meet.
+headlineAccent: software engineering, machine learning, and research
+intro: >-
+  CS & Mathematical Economics @ Purdue '27 — from LLM extraction pipelines and
+  agentic text-to-SQL to fusion rules for quantum quasiparticles.
+availability: Graduating May 2027 · Open to full-time roles starting summer 2027
+resumeUpdated: July 2026
+
+email: tayden.white@gmail.com
+github: https://github.com/TaydenWhite
+linkedin: https://www.linkedin.com/in/tayden-white/
+
+highlights:
+  - value: "60% → 99%"
+    label: hand-coding comparative accuracy from my LLM transcript pipeline
+  - value: "30 → 5 min"
+    label: build time for J&J compliance dashboards serving 60k+ records
+  - value: "3 + 1"
+    label: forthcoming papers and a book chapter with my contributions
+  - value: "3.85"
+    label: GPA with Dean's List & Semester Honors (6x)
+
+education:
+  school: Purdue University
+  location: West Lafayette, IN
+  dates: Aug 2023 – May 2027
+  degree: Dual degrees in Computer Science & Mathematical Economics
+  gpa: "3.85"
+  honors: Dean's List & Semester Honors (6x)
+  coursework:
+    - Data Structures & Algorithms
+    - Data Mining & Machine Learning
+    - Game Theory
+    - Econometrics

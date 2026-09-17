@@ -1,0 +1,91 @@
+{{ define "main" }}
+{{- $p := site.Data.profile }}
+{{- $featured := sort (where site.Pages "Params.featured" "!=" nil) "Params.featured" }}
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div>
+      <p class="hero__name">{{ $p.name }}</p>
+      <h1>
+        {{- $headline := $p.headline | htmlEscape }}
+        {{- with $p.headlineAccent }}{{ $headline = replace $headline (. | htmlEscape) (printf `<span class="accent">%s</span>` (. | htmlEscape)) }}{{ end }}
+        {{- $headline | safeHTML -}}
+      </h1>
+      <p class="hero__intro">{{ $p.intro }}</p>
+      <p class="hero__status">{{ $p.availability }}</p>
+      <div class="btn-row">
+        <a class="btn btn--primary" href="{{ "resume/" | relURL }}">{{ partial "icon.html" "file-text" }}View resume</a>
+        <a class="btn btn--secondary" href="mailto:{{ $p.email }}">{{ partial "icon.html" "mail" }}Email me</a>
+        <a class="btn btn--ghost" href="{{ $p.github }}" rel="noopener" aria-label="GitHub profile">{{ partial "icon.html" "github" }}</a>
+        <a class="btn btn--ghost" href="{{ $p.linkedin }}" rel="noopener" aria-label="LinkedIn profile">{{ partial "icon.html" "linkedin" }}</a>
+      </div>
+    </div>
+    {{- with resources.Get "images/headshot.jpg" }}
+    {{ partial "image.html" (dict "img" . "alt" (printf "Photo of %s" $p.name) "class" "hero__photo" "widths" (slice 280 520) "sizes" "(max-width: 720px) 128px, 260px" "eager" true) }}
+    {{- end }}
+  </div>
+</section>
+
+<section class="container" aria-label="Highlights">
+  <dl class="highlights">
+    {{- range $p.highlights }}
+    <div class="highlight"><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+    {{- end }}
+  </dl>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Featured work</p>
+        <h2>Selected research &amp; projects</h2>
+      </div>
+      <a class="link-arrow" href="{{ "projects/" | relURL }}">All projects {{ partial "icon.html" "arrow-right" }}</a>
+    </div>
+    <div class="card-grid">
+      {{- range $featured }}{{ partial "card.html" . }}{{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Experience</p>
+        <h2>Where I've worked</h2>
+      </div>
+      <a class="link-arrow" href="{{ "experience/" | relURL }}">Full experience {{ partial "icon.html" "arrow-right" }}</a>
+    </div>
+    <ol class="timeline">
+      {{- range site.Data.experience }}{{ partial "xp-item.html" (dict "item" . "compact" true) }}{{ end }}
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Skills</p>
+        <h2>Tools I work with</h2>
+      </div>
+    </div>
+    {{ partial "skills.html" (dict "class" "skills--cols") }}
+  </div>
+</section>
+
+<section class="container">
+  <div class="cta">
+    <div>
+      <h2>Let's talk</h2>
+      <p>{{ $p.availability }}. Email is the fastest way to reach me.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="mailto:{{ $p.email }}">{{ partial "icon.html" "mail" }}{{ $p.email }}</a>
+      <a class="btn btn--secondary" href="{{ $p.linkedin }}" rel="noopener">{{ partial "icon.html" "linkedin" }}LinkedIn</a>
+    </div>
+  </div>
+</section>
+{{ end }}

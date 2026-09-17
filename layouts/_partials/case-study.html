@@ -1,0 +1,48 @@
+{{- /* Project / research write-up. Context: page. */ -}}
+<article>
+  <header class="container page-head">
+    {{ partial "breadcrumb.html" . }}
+    {{- with .Params.kicker | default .Params.org }}<p class="eyebrow">{{ . }}</p>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{- with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="container split">
+    <div>
+      {{- with .Params.metrics }}
+      <dl class="metrics">
+        {{- range . }}<div class="metric"><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>{{ end }}
+      </dl>
+      {{- end }}
+
+      {{- with .Params.cover }}{{ with $.Resources.GetMatch . }}
+      <figure class="prose">
+        {{ partial "image.html" (dict "img" . "alt" $.Params.coverAlt "sizes" "(max-width: 900px) 100vw, 720px" "eager" true) }}
+        {{- with $.Params.coverCaption }}<figcaption>{{ . }}</figcaption>{{ end }}
+      </figure>
+      {{- else }}{{ errorf "case-study: cover %q not found in %s" . $.Path }}{{ end }}{{ end }}
+
+      <div class="prose">
+        {{ .Content }}
+      </div>
+
+      {{- if .IsSection }}{{ with .Pages.ByWeight }}
+      <section class="prose">
+        <h2 id="{{ $.Params.childrenTitle | default "More" | anchorize }}">{{ $.Params.childrenTitle | default "More" }}</h2>
+        <ul class="child-list">
+          {{- range . }}
+          <li>
+            <a href="{{ .RelPermalink }}">
+              <span>{{ .LinkTitle }}{{ with .Description }}<small>{{ . }}</small>{{ end }}</span>
+              {{ partial "icon.html" "arrow-right" }}
+            </a>
+          </li>
+          {{- end }}
+        </ul>
+      </section>
+      {{- end }}{{ end }}
+    </div>
+
+    {{ partial "meta-panel.html" . }}
+  </div>
+</article>

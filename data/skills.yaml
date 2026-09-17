@@ -1,0 +1,10 @@
+# Technical skills, grouped as on the resume.
+
+- group: Languages
+  items: [Python, C/C++, Java, JavaScript/TypeScript, SQL (PostgreSQL), R, Julia, x86-64 Assembly, Bash]
+
+- group: ML & Data
+  items: [PyTorch, scikit-learn, pandas, NumPy, PySpark, matplotlib, OpenAI API, Databricks/Delta Lake]
+
+- group: Frameworks & Tools
+  items: [Streamlit, Django, React, WebSockets, Hugo, Git, GitHub Actions, Docker, AWS, Linux, LaTeX]

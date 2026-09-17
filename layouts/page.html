@@ -1,0 +1,19 @@
+{{ define "main" }}
+{{- if .Params.summary }}
+{{ partial "case-study.html" . }}
+{{- else }}
+<article>
+  <header class="container page-head">
+    {{ partial "breadcrumb.html" . }}
+    <h1>{{ .Title }}</h1>
+    {{- with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+  </header>
+  <div class="container">
+    <div class="prose{{ if .Params.wide }} prose--wide{{ end }}">
+      {{ .Content }}
+    </div>
+    {{ partial "pager.html" . }}
+  </div>
+</article>
+{{- end }}
+{{ end }}

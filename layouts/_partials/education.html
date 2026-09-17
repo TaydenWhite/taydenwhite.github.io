@@ -1,0 +1,7 @@
+{{- with site.Data.profile.education }}
+<p class="edu__school">{{ .school }}</p>
+<p class="edu__degree">{{ .degree }}</p>
+<p class="edu__line"><strong>GPA {{ .gpa }}</strong> · {{ .honors }}</p>
+<p class="edu__line">{{ .dates }} · {{ .location }}</p>
+<p class="edu__line"><strong>Coursework:</strong> {{ delimit .coursework ", " }}</p>
+{{- end }}

@@ -1,0 +1,6 @@
+{{- $profile := site.Data.profile }}
+<div class="socials">
+  <a class="icon-btn" href="mailto:{{ $profile.email }}" aria-label="Email {{ $profile.name }}">{{ partial "icon.html" "mail" }}</a>
+  <a class="icon-btn" href="{{ $profile.github }}" rel="noopener" aria-label="GitHub profile">{{ partial "icon.html" "github" }}</a>
+  <a class="icon-btn" href="{{ $profile.linkedin }}" rel="noopener" aria-label="LinkedIn profile">{{ partial "icon.html" "linkedin" }}</a>
+</div>

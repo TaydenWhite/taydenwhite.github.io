@@ -1,0 +1,5 @@
+{{- /* Highlighted note. Usage: {{< callout >}}Markdown text{{< /callout >}} */ -}}
+<div class="callout" role="note">
+  {{ partial "icon.html" "info" }}
+  <div>{{ .Inner | strings.TrimSpace | .Page.RenderString (dict "display" "block") }}</div>
+</div>

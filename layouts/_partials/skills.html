@@ -1,0 +1,10 @@
+{{- /* Skill groups. Context: dict "class" (extra CSS class), "level" (heading tag). */ -}}
+{{- $tag := .level | default "h3" }}
+<div class="skills{{ with .class }} {{ . }}{{ end }}">
+  {{- range site.Data.skills }}
+  <div>
+    {{ printf "<%s>%s</%s>" $tag .group $tag | safeHTML }}
+    {{ partial "chips.html" .items }}
+  </div>
+  {{- end }}
+</div>

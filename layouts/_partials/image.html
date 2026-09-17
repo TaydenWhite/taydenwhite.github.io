@@ -1,0 +1,19 @@
+{{- /* Responsive WebP image from an image resource.
+       Context: dict "img" (resource), "alt", "class", "sizes", "widths", "eager". */ -}}
+{{- $img := .img -}}
+{{- $widths := .widths | default (slice 480 800 1200) -}}
+{{- $srcset := slice -}}
+{{- $largest := "" -}}
+{{- range $widths -}}
+  {{- if le . $img.Width -}}
+    {{- $r := $img.Resize (printf "%dx webp q80" .) -}}
+    {{- $srcset = $srcset | append (printf "%s %dw" $r.RelPermalink .) -}}
+    {{- $largest = $r -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $largest }}{{ $largest = $img.Resize (printf "%dx webp q80" $img.Width) }}{{ end -}}
+<img src="{{ $largest.RelPermalink }}"
+  {{- with $srcset }} srcset="{{ delimit . ", " }}" sizes="{{ $.sizes | default "100vw" }}"{{ end }}
+  width="{{ $largest.Width }}" height="{{ $largest.Height }}"
+  alt="{{ .alt }}"{{ with .class }} class="{{ . }}"{{ end }}
+  {{- if .eager }} fetchpriority="high"{{ else }} loading="lazy"{{ end }} decoding="async">

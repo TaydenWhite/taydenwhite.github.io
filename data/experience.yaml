@@ -1,0 +1,48 @@
+# Work and research experience, newest first. Source of truth: the latest resume.
+# `page` links the entry to its project or research write-up (a Hugo page path).
+# `video` names a video resource stored with content/experience/index.md.
+
+- org: Communication and Cognition Lab, Purdue University
+  orgUrl: https://web.ics.purdue.edu/~treimer/
+  role: Undergraduate Researcher
+  dates: Mar 2026 – Present
+  location: West Lafayette, IN
+  bullets:
+    - Built a full-stack web application in Python using Streamlit to run an experiment in which one human and 2–3 LLMs deliberate over three Hidden Profile Paradigm group decision-making tasks.
+    - Automated transcript coding with an LLM extraction pipeline, using the OpenAI API to classify information-sharing events across ~2000 HPP discussions, increasing hand-coding comparative accuracy from 60% to 99%.
+    - Contributions appearing in three forthcoming papers and a book chapter.
+  tech: [Python, Streamlit, OpenAI API]
+  page: /research/llm-transcript-coding
+
+- org: Department of Mathematics, Purdue University
+  role: Undergraduate Researcher
+  dates: May 2025 – Aug 2025 · May 2026 – Present
+  location: West Lafayette, IN
+  bullets:
+    - Diagnosed and resolved edge cases in a fusion algorithm for “permutation defects”, quasiparticles that can encode qubits in topological quantum computing, producing a revised set of rules to be used in a future publication.
+    - Contributed core fusion-ring operations (Deligne product, defect fusion) to an open-source Julia package implementing fusion rings.
+  tech: [Julia, Topological quantum computing]
+  page: /research/permutation-defects
+
+- org: Johnson & Johnson Innovative Medicine
+  role: Software Engineer Co-op
+  dates: Aug 2025 – Dec 2025
+  location: Raritan, NJ
+  bullets:
+    - Optimized an FDA compliance analytics pipeline to support more than 60k records in static Hugo dashboards, cutting build time from ~30 minutes to ~5 minutes.
+    - Designed an agentic text-to-SQL workflow that decomposes natural-language questions into parallel queries across Delta tables supporting Hugo site backends.
+  tech: [Hugo, Delta Lake, SQL, LLM agents]
+  page: /projects/jnj-compliance-dashboards
+
+- org: Johnson & Johnson Innovative Medicine
+  role: Data Science Intern
+  dates: May 2024 – Aug 2024
+  location: Raritan, NJ
+  bullets:
+    - Refactored an internal “generic” machine learning R package into modular components, eliminating 200+ lines of duplicated logic and enabling downstream teams to extend it without forking.
+    - Spearheaded an initiative for interns to build and deploy static sites using Hugo & GitHub Pages, producing tutorial documentation that taught 20+ coworkers how to deploy their own site.
+  tech: [R, Hugo, GitHub Pages]
+  page: /projects/hugo-website-tutorials
+  video:
+    file: internship-wrap-up.mp4
+    label: Watch my internship wrap-up video

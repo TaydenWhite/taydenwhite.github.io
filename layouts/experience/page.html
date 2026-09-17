@@ -1,0 +1,30 @@
+{{ define "main" }}
+<header class="container page-head">
+  <h1>{{ .Title }}</h1>
+  {{- with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+</header>
+
+<div class="container split">
+  <ol class="timeline">
+    {{- range site.Data.experience }}{{ partial "xp-item.html" (dict "item" . "page" $) }}{{ end }}
+  </ol>
+
+  <aside class="sticky">
+    <div class="panel">
+      <h2>Education</h2>
+      {{ partial "education.html" . }}
+    </div>
+    <div class="panel">
+      <h2>Skills</h2>
+      {{ partial "skills.html" (dict "level" "h3") }}
+    </div>
+    <div class="panel">
+      <h2>Resume</h2>
+      <div class="btn-row">
+        <a class="btn btn--primary btn--sm" href="{{ "resume.pdf" | relURL }}" download="Tayden-White-Resume.pdf">{{ partial "icon.html" "download" }}Download PDF</a>
+        <a class="btn btn--ghost btn--sm" href="{{ "resume/" | relURL }}">View online</a>
+      </div>
+    </div>
+  </aside>
+</div>
+{{ end }}
