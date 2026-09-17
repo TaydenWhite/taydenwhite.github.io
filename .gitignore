@@ -3,3 +3,8 @@ resources/
 node_modules/
 package-lock.json
 .hugo_build.lock
+
+# Local-only files
+.DS_Store
+*.log
+Agent Context/
