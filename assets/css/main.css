@@ -972,7 +972,8 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, .heading-anchor:focus { opac
   display: grid;
   place-items: center;
   gap: 1.25rem;
-  min-height: 420px;
+  /* A fixed window: output scrolls inside it instead of stretching the page. */
+  height: clamp(340px, 62vh, 600px);
   padding: 1rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -980,8 +981,15 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, .heading-anchor:focus { opac
   overflow: hidden;
 }
 .game[data-state="playing"] .game__screen { display: block; padding: 0.75rem; }
-.game__preview {
+.game .xterm,
+.game .xterm-screen { height: 100%; }
+.game__preview,
+.prose .game__preview {
   margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none !important;
   color: #8fa888;
   font-size: clamp(0.6rem, 2.2vw, 0.8rem);
   line-height: 1.35;

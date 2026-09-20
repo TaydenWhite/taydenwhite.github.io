@@ -95,7 +95,15 @@
       term.open(screen);
       // Fit once the browser has settled the layout, then whenever it changes,
       // so the terminal never forces the page wider than the viewport.
-      const refit = () => { try { fit.fit(); } catch (error) { /* not visible yet */ } };
+      let fitted = "";
+      const refit = () => {
+        // Only refit when the box actually changed size, so observing our own
+        // resize cannot feed back into another resize.
+        const size = screen.clientWidth + "x" + screen.clientHeight;
+        if (size === fitted || !screen.clientHeight) return;
+        fitted = size;
+        try { fit.fit(); } catch (error) { /* not laid out yet */ }
+      };
       refit();
       requestAnimationFrame(refit);
       if (window.ResizeObserver) new ResizeObserver(refit).observe(screen);
@@ -116,6 +124,7 @@
       chef = pyodide.pyimport("browser_main");
       session = chef.Session((text) => term.write(text));
 
+      root.terminal = term;  // handy when debugging from the console
       term.onData((data) => press(keyName(data)));
       term.focus();
       restartButton.hidden = false;
