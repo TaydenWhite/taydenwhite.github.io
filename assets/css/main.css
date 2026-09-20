@@ -974,7 +974,7 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, .heading-anchor:focus { opac
   gap: 1.25rem;
   /* Idle height roughly matches the terminal that replaces it, so the page
      does not jump when the game loads. */
-  min-height: 360px;
+  min-height: 540px;
   padding: 1rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);

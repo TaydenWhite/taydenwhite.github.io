@@ -81,7 +81,7 @@
       // The game's boxes are about 50 columns wide, so shrink the type on
       // narrow screens rather than letting the ASCII art wrap.
       const narrow = window.matchMedia("(max-width: 640px)").matches;
-      const ROWS = 20;  // window height, in terminal rows; older output scrolls
+      const ROWS = 30;  // window height, in terminal rows; older output scrolls
       term = new window.Terminal({
         convertEol: false,
         cursorBlink: true,
