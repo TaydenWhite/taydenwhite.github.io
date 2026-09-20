@@ -972,17 +972,18 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, .heading-anchor:focus { opac
   display: grid;
   place-items: center;
   gap: 1.25rem;
-  /* A fixed window: output scrolls inside it instead of stretching the page. */
-  height: clamp(340px, 62vh, 600px);
+  /* Idle height roughly matches the terminal that replaces it, so the page
+     does not jump when the game loads. */
+  min-height: 360px;
   padding: 1rem;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: #0f130e;
   overflow: hidden;
 }
-.game[data-state="playing"] .game__screen { display: block; padding: 0.75rem; }
-.game .xterm,
-.game .xterm-screen { height: 100%; }
+/* While playing, the box hugs the terminal, which is a fixed number of rows:
+   output scrolls inside it and stays pinned to the newest line. */
+.game[data-state="playing"] .game__screen { display: block; min-height: 0; padding: 0.75rem; }
 .game__preview,
 .prose .game__preview {
   margin: 0;

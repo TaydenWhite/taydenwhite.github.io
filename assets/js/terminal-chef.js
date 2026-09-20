@@ -81,11 +81,13 @@
       // The game's boxes are about 50 columns wide, so shrink the type on
       // narrow screens rather than letting the ASCII art wrap.
       const narrow = window.matchMedia("(max-width: 640px)").matches;
+      const ROWS = 20;  // window height, in terminal rows; older output scrolls
       term = new window.Terminal({
         convertEol: false,
         cursorBlink: true,
         fontFamily: '"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace',
         fontSize: narrow ? 9 : 13,
+        rows: ROWS,
         scrollback: 2000,
         theme: { background: "#0f130e", foreground: "#e6eae3", cursor: "#768e6f", selectionBackground: "#3a4a36" },
       });
@@ -95,14 +97,18 @@
       term.open(screen);
       // Fit once the browser has settled the layout, then whenever it changes,
       // so the terminal never forces the page wider than the viewport.
-      let fitted = "";
+      let fittedWidth = 0;
       const refit = () => {
-        // Only refit when the box actually changed size, so observing our own
-        // resize cannot feed back into another resize.
-        const size = screen.clientWidth + "x" + screen.clientHeight;
-        if (size === fitted || !screen.clientHeight) return;
-        fitted = size;
-        try { fit.fit(); } catch (error) { /* not laid out yet */ }
+        // Fit picks the column count from the width; the row count stays fixed
+        // so the window keeps a constant height. Width-only guard, because
+        // resizing the terminal changes the height we are observing.
+        const width = screen.clientWidth;
+        if (!width || width === fittedWidth) return;
+        fittedWidth = width;
+        try {
+          fit.fit();
+          term.resize(term.cols, ROWS);
+        } catch (error) { /* not laid out yet */ }
       };
       refit();
       requestAnimationFrame(refit);
