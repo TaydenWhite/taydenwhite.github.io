@@ -49,7 +49,7 @@ hugo --gc --minify && htmltest   # production build + link check (go install git
 | Path | URL | Notes |
 |---|---|---|
 | `_index.md` | `/` | Rendered by `layouts/home.html` entirely from `data/` + pages with `featured:` |
-| `projects/` | `/projects/` | Card grid with topic filters (`filters: true`). Pages: `jnj-compliance-dashboards`, `unix-shell`, `multithreaded-marketplace`, `hugo-website-tutorials/` (section with 4 tutorial pages), `rubiks-cube-listener` (**draft**) |
+| `projects/` | `/projects/` | Card grid with topic filters (`filters: true`). Pages: `terminal-chef` (playable embed), `jnj-compliance-dashboards`, `unix-shell`, `multithreaded-marketplace`, `hugo-website-tutorials/` (section with 4 tutorial pages), `rubiks-cube-listener` (**draft**) |
 | `research/` | `/research/` | `llm-transcript-coding`, `permutation-defects/` (section with 5 PDF report pages + expo video), `future-of-ai-at-purdue` |
 | `experience/index.md` | `/experience/` | `type: experience`, timeline from `data/experience.yaml`; holds the J&J wrap-up video resource |
 | `about/index.md` | `/about/` | `type: about`, bio + education + skills + `beyond:` cards (speedcubing, lists, playground) |
@@ -60,7 +60,9 @@ hugo --gc --minify && htmltest   # production build + link check (go install git
 
 **Case-study front matter** (any page with `summary:` renders via `_partials/case-study.html`): `title, summary, description, org | kicker, orgUrl, role, dates, date, weight, featured, team, stack[], tags[], metrics[{value,label}], links[{label,url}], cover, coverAlt, coverCaption, childrenTitle, note, aliases[]`. Simple pages use `title, description, weight, wide`.
 
-**Shortcodes:** `embed-pdf file= title=`, `embed-video file=` (both fail the build if the file is missing), `youtube id= title=` (click-to-load), `flow "step" "step" …` (positional only; Markdown allowed), `callout` (block), `pong`, `searchable-table id= csvFile=` (Tabulator + PapaParse from jsDelivr with SRI), `rubiks-listener apiUrl=`.
+**Terminal Chef embed:** `assets/games/terminal-chef/terminal_chef/` is vendored unmodified from [TaydenWhite/terminal-chef](https://github.com/TaydenWhite/terminal-chef) by `scripts/update-terminal-chef.sh`, which pins the commit in `data/terminal_chef.yaml`. `browser_main.py` (written for this site) reproduces the game's blocking menu loop as a state machine, and `assets/js/terminal-chef.js` loads Pyodide + xterm.js on click, writes the package into Pyodide's filesystem, and feeds it keypresses. Never edit the vendored `terminal_chef/` files here; change them upstream and re-run the script. Hugo's `.Name` on an asset resource has a leading slash, which the shortcode trims when building the file manifest.
+
+**Shortcodes:** `embed-pdf file= title=`, `embed-video file=` (both fail the build if the file is missing), `youtube id= title=` (click-to-load), `flow "step" "step" …` (positional only; Markdown allowed), `callout` (block), `pong`, `terminal-chef` (playable Python game), `searchable-table id= csvFile=` (Tabulator + PapaParse from jsDelivr with SRI), `rubiks-listener apiUrl=`.
 
 **Taxonomy:** a single `tags` taxonomy (Data, Leadership, Machine Learning, Mathematics, Research, Systems, Web). Keep the vocabulary small.
 

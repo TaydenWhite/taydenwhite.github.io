@@ -612,7 +612,7 @@ a.chip--tag:hover { text-decoration: underline; }
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
 }
-@media (max-width: 900px) { .split { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .split { grid-template-columns: minmax(0, 1fr); } }
 
 .panel {
   background: var(--surface);
@@ -962,3 +962,58 @@ h2:hover .heading-anchor, h3:hover .heading-anchor, .heading-anchor:focus { opac
   .site-header, .site-footer, .theme-toggle, .nav-toggle { display: none !important; }
   body { background: #fff; color: #000; }
 }
+
+/* ---------- Embedded game (Terminal Chef) ---------- */
+
+.game { margin: 1.5rem 0; max-width: 100%; }
+.game .xterm { max-width: 100%; }
+.game__screen {
+  position: relative;
+  display: grid;
+  place-items: center;
+  gap: 1.25rem;
+  min-height: 420px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #0f130e;
+  overflow: hidden;
+}
+.game[data-state="playing"] .game__screen { display: block; padding: 0.75rem; }
+.game__preview {
+  margin: 0;
+  color: #8fa888;
+  font-size: clamp(0.6rem, 2.2vw, 0.8rem);
+  line-height: 1.35;
+  white-space: pre;
+  overflow-x: auto;
+  max-width: 100%;
+}
+.game__status:empty { display: none; }
+.game__status { margin: 0.75rem 0 0; color: var(--muted); font-size: 0.92rem; }
+.game__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+.game__hint { margin: 0; color: var(--muted); font-size: 0.88rem; }
+.game__keys { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.75rem; }
+.game__keys-group { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+.game__key {
+  min-width: 2.4rem;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font: 500 0.9rem/1 var(--font-mono);
+  cursor: pointer;
+}
+.game__key:hover { border-color: var(--brand); }
+.game__key:active { background: var(--brand-soft); }
+/* xterm renders its own canvas; keep it inside the rounded frame. */
+.game .xterm { padding: 0.25rem; }
+.game .xterm-viewport { overflow-y: auto; }

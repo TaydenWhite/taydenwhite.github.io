@@ -1,0 +1,53 @@
+{{- /* Playable Terminal Chef. Usage: {{< terminal-chef >}}
+       The Python package is vendored in assets/games/terminal-chef/ by
+       scripts/update-terminal-chef.sh; this passes each file's published URL to
+       the loader, which writes them into Pyodide's filesystem. */ -}}
+{{- $base := "games/terminal-chef/" -}}
+{{- $files := dict -}}
+{{- range (resources.Match (printf "%s**.py" $base)) -}}
+  {{- /* .Name carries a leading slash, so trim that before the asset directory. */ -}}
+  {{- $rel := .Name | strings.TrimPrefix "/" | strings.TrimPrefix $base -}}
+  {{- $files = merge $files (dict $rel .RelPermalink) -}}
+{{- end -}}
+{{- if lt (len $files) 2 }}{{ errorf "terminal-chef: no vendored game source found in assets/%s (run scripts/update-terminal-chef.sh)" $base }}{{ end -}}
+
+<div class="game" data-terminal-chef data-state="idle">
+  <script type="application/json" data-files>{{ $files | jsonify | safeJS }}</script>
+  <div class="game__screen" data-screen>
+    <pre class="game__preview" aria-hidden="true">   //============================\
+   ||  WELCOME TO TERMINAL CHEF  ||
+   ||                   __       ||
+   ||       ^~^~^~^    (  )      ||
+   ||      (       )    ||       ||
+   ||       |_!_!_|     ||       ||
+   ||       ' ' ' '     ()       ||
+   ||                            ||
+   ||  CREATED BY: TAYDEN WHITE  ||
+   \============================//</pre>
+    <button class="btn btn--primary game__start" type="button" data-start>Play in your browser</button>
+  </div>
+  <p class="game__status" data-status role="status"></p>
+  <div class="game__keys" data-keypad hidden>
+    <div class="game__keys-group" role="group" aria-label="Movement">
+      <button class="game__key" type="button" data-key="UP">↑</button>
+      <button class="game__key" type="button" data-key="LEFT">←</button>
+      <button class="game__key" type="button" data-key="DOWN">↓</button>
+      <button class="game__key" type="button" data-key="RIGHT">→</button>
+    </div>
+    <div class="game__keys-group" role="group" aria-label="Menu selections">
+      {{- range (seq 1 6) }}<button class="game__key" type="button" data-key="{{ . }}">{{ . }}</button>{{ end }}
+    </div>
+    <div class="game__keys-group" role="group" aria-label="Actions">
+      <button class="game__key" type="button" data-key="E">E</button>
+      <button class="game__key" type="button" data-key="R">R</button>
+      <button class="game__key" type="button" data-key="ENTER">⏎</button>
+      <button class="game__key" type="button" data-key="ESC">ESC</button>
+    </div>
+  </div>
+  <div class="game__bar">
+    <p class="game__hint">Arrow keys or WASD to move · <strong>1–4</strong> to choose · <strong>E</strong> everything · <strong>R</strong> recipes · <strong>ESC</strong> pause</p>
+    <button class="btn btn--secondary btn--sm" type="button" data-restart hidden>Restart</button>
+  </div>
+</div>
+{{- $js := resources.Get "js/terminal-chef.js" | js.Build (dict "minify" true) | fingerprint }}
+<script src="{{ $js.RelPermalink }}" defer></script>
