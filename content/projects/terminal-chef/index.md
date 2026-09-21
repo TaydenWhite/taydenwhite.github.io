@@ -24,7 +24,7 @@ links:
 
 In essence, Terminal Chef is a game of menus and processes. The minimality of visual information means navigating menus and tracking processes will be difficult to start. As your mental model of the kitchen improves, so will your efficiency and speed.
 
-You run a kitchen with seven rooms, a short game asks you to serve 6 customers, a long game has 12.
+You run a kitchen with seven rooms, a short game asks you to serve seven customers, a long game has twelve.
 
 {{< terminal-chef >}}
 
