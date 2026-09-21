@@ -1,9 +1,8 @@
 ---
 title: Terminal Chef
 summary: >-
-  A real-time cooking game that runs entirely in a terminal, written in pure
-  Python with no third-party dependencies — and playable right here, because
-  the same code runs in your browser through WebAssembly.
+  A text-adventure esque cooking game that runs entirely in a terminal, written in pure
+  Python with no third-party dependencies—and playable here via WebAssembly.
 description: A dependency-free Python terminal game, playable in the browser via Pyodide and xterm.js.
 kicker: Personal project
 weight: 5
@@ -12,51 +11,70 @@ tags: [Systems, Web]
 metrics:
   - value: "0"
     label: third-party dependencies
-  - value: "1,238"
+  - value: "1,200"
     label: lines of Python across 8 modules
   - value: "4"
-    label: "platforms: macOS, Linux, Windows, and the browser"
+    label: "platforms: macOS, Linux, Windows, and browser"
 links:
   - label: Source on GitHub
     url: https://github.com/TaydenWhite/terminal-chef
 ---
 
-## Play it
+## Play
 
-You run a kitchen across seven rooms, cooking and plating what three customers order while the trash piles up behind you. Every timer is real: food burns, plates expire, and the kitchen slows down as the bins fill.
+In essence, Terminal Chef is a game of menus and processes. The minimality of visual information means navigating menus and tracking processes will be difficult to start. As your mental model of the kitchen improves, so will your efficiency and speed.
+
+You run a kitchen with seven rooms, a short game asks you to serve 6 customers, a long game has 12.
 
 {{< terminal-chef >}}
 
 {{< callout >}}
-This is the real Python game, not a recreation. It runs in your browser through Pyodide (CPython compiled to WebAssembly), so nothing is installed and nothing is sent to a server. High scores live in the page's temporary filesystem and disappear when you reload.
+Runs in your browser through Pyodide (CPython compiled to WebAssembly), so nothing needs to be installed and no server is necessary. High scores live in the page's temporary filesystem, so they will disappear when you reload.
 {{< /callout >}}
 
-To play it natively, where scores persist in `~/.terminal-chef/scores.json`:
+To play it natively with persistent scores:
 
 ```bash
 pipx install git+https://github.com/TaydenWhite/terminal-chef
 terminal-chef
 ```
 
-## The kitchen
+## Kitchen Layout
 
 ```text
 [SERVICE]
-[PLATING] [STOVES]    [PANTRY]
-[COUNTERS][PREP ROOM] [CLEANING]
+[PLATING]  [STOVES]    [PANTRY]
+[COUNTERS] [PREP ROOM] [CLEANING]
 ```
 
-Each of the six ingredients has its own path through the kitchen, and the steps have to happen in order: beef is cooked and then cut, chicken is washed, cooked and cut, tomato is washed, cut and cooked. Stopping early changes what you get. A cooked but uncut piece of beef is a burger patty; cut it too and it becomes a steak. The game silently refuses any step that isn't a legal next move for some recipe, so you learn to read the tags.
+Navigate between rooms with arrow keys or WASD
 
-Trash is the pressure. Every finished process adds some, burning food adds more, and from level 8 up everything you start runs slower, until you stop and clear the bins.
+## Ingredients
+
+```text
+Fridge:
+  1. [UNCOOKED] [UNCUT]  Beef
+  2. [UNWASHED] [UNCOOKED] [UNCUT] Chicken
+  3. [UNWASHED] [UNCUT] Lettuce
+
+Shelf:
+  1. [UNWASHED] [UNCUT] [UNCOOKED] Tomato
+  2. [UNCUT] [UNCOOKED] Potato
+  3. [UNCUT] [RTP] Bread
+```
+
+Ingredient tags need to be addressed from left to right, but recipes may not require all processes to be applied to an ingredient before it is ready to plate—denoted by [RTP].
+
+## Mechanics
+Trash Level: Every process increase adds 1 to your trash level. Burning food and letting counter items expire will add 3 to your trash level. Starting at level 8, all processes will take an extra 5 seconds; level 9 increases processes by 10 seconds, level 10 by 15. Clear your trash level at the trash disposal.
+
+Plates: Foods can only be combined on plates in the Plating room. When customers finish eating, you must take their dirty plate to recieve the next customer. Plates are washed in the dish washer, and must be returned to Plating to begin another dish.
+
 
 ## How it's built
 
-### No dependencies, anywhere
 
-The whole game is 1,238 lines of Python across 8 modules, using only the standard library. That keeps installation to one `pipx` command, and it's the reason the browser port was possible at all: there are no compiled wheels to find.
-
-### Reading single keypresses on three platforms
+### Reading keypresses on three platforms
 
 Terminals normally hand a program a whole line at a time, only after Enter. A real-time game needs each key the moment it's pressed, and that works differently on every platform:
 
