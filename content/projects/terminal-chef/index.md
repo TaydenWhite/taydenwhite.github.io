@@ -24,7 +24,7 @@ links:
 
 In essence, Terminal Chef is a game of menus and processes. The minimality of visual information means navigating menus and tracking processes will be difficult to start. As your mental model of the kitchen improves, so will your efficiency and speed.
 
-You run a kitchen with seven rooms, a short game asks you to serve seven customers, a long game has twelve.
+You run a kitchen with seven rooms, a short game asks you to serve six customers, a long game has twelve.
 
 {{< terminal-chef >}}
 
@@ -65,10 +65,12 @@ Shelf:
 
 Ingredient tags need to be addressed from left to right, but recipes may not require all processes to be applied to an ingredient before it is ready to plate—denoted by [RTP].
 
-## Mechanics
-Trash Level: Every process increase adds 1 to your trash level. Burning food and letting counter items expire will add 3 to your trash level. Starting at level 8, all processes will take an extra 5 seconds; level 9 increases processes by 10 seconds, level 10 by 15. Clear your trash level at the trash disposal.
+Most recipes also have to be stacked in order, so bread goes down before the patty. Salads are the exception: every ingredient counts as the same step, so lettuce, tomato and any meat can go on in any order.
 
-Plates: Foods can only be combined on plates in the Plating room. When customers finish eating, you must take their dirty plate to recieve the next customer. Plates are washed in the dish washer, and must be returned to Plating to begin another dish.
+## Mechanics
+Trash Level: Every process increase adds 1 to your trash level. Burning food and letting counter items expire will add 3 to your trash level. Starting at level 8, most processes take an extra 5 seconds; level 9 adds 10 seconds, level 10 adds 15. Burning, counter expiry and the trash disposal are never slowed. Clear your trash level at the trash disposal, which always takes 15 seconds and drops you back to zero.
+
+Plates: Foods can only be combined on plates in the Plating room. When customers finish eating, you must take their dirty plate to receive the next customer. Plates are washed in the dish washer, and must be returned to Plating to begin another dish.
 
 
 ## How it's built
